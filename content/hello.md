@@ -1,14 +1,18 @@
 ---
-title: Accueil
+title: Sommaire blog
 description: Sommaire du blog
 ---
 
-## Sommaire
+# Ca arrive trèèèèès bientôt
 
 
 
-[Premier article](/articles/blog)
-
-<a href="https://nuxtjs.org">Lien Html externe</a>
-
-[Lien Markdown externe](https://nuxtjs.org)
+<a href="http://thierry-go-dev.fr">Accueil du site</a>
+<br>
+<br>
+<br>
+<br>
+[El Famoso NUXT.JS !!](https://nuxtjs.org)
+<br>
+<br>
+<br>

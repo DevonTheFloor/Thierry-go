@@ -5,24 +5,26 @@
       <h1 class="title">
         Thierry Go Dev
       </h1>
-      <p>Site en construction, en attendant il y a peut être des articles dans le blog?</p>
+      <p>
+        Site en construction, en attendant il y a peut être des articles dans le blog?
+      </p>
       <div class="links">
         <a
           href="https://github.com/DevonTheFloor"
           target="_blank"
           rel="noopener noreferrer"
-          class="button--grey"
+          class="btn-custom button--grey"
         >
           Mon GitHub
         </a>
-        <nuxt-link to="blog/" class="button--green">
+        <nuxt-link to="blog/" class="btn-custom button--green">
           Accueil Blog
         </nuxt-link>
         <a
           href="https://nuxtjs.org/"
           target="_blank"
           rel="noopener noreferrer"
-          class="button--green"
+          class="btn-custom button--green"
         >
           Nuxt.Js
         </a>
@@ -36,6 +38,7 @@ export default {}
 </script>
 
 <style>
+
 .container {
   margin: 0 auto;
   min-height: 100vh;
@@ -44,7 +47,9 @@ export default {}
   align-items: center;
   text-align: center;
 }
-
+Logo {
+  margin:2%;
+}
 .title {
   font-family:
     'Quicksand',
@@ -72,6 +77,25 @@ export default {}
 }
 
 .links {
+  margin: 3%;
   padding-top: 15px;
+}
+@media screen and (max-width: 470px) {
+  .title {
+    padding: 2%;
+    font-size: 70px;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn-custom {
+    max-width: 60vw;
+    margin: 1vh;
+  }
+  p {
+    padding: 1%;
+  }
 }
 </style>
