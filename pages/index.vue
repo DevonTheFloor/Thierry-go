@@ -4,7 +4,23 @@
       <Logo />
       <h1 class="title">
         Thierry Go Dev
+        <figure>
+          <img class="profile" src="~static/profil.jpg">
+        </figure>
       </h1>
+      <h2>
+        Développeur d'application web et mobile, full stack JS.
+      </h2>
+      <div>
+        <figure>
+          <img src="~/static/HTML5.png" alt="logo html 5" class="ecusson">
+          <img src="~/static/css3.png" alt="logo css 3" class="ecusson">
+          <img src="~/static/JS.png" alt="logo JavaScript" class="ecusson">
+          <img src="~/static/node.png" alt="logo Node.js" class="ecusson">
+          <img src="~/static/mongo.png" alt="logo mongodb" class="ecusson">
+        </figure>
+      </div>
+
       <p>
         Site en construction, en attendant il y a peut être des articles dans le blog?
       </p>
@@ -18,7 +34,7 @@
           Mon GitHub
         </a>
         <nuxt-link to="blog/" class="btn-custom button--green">
-          Accueil Blog
+          Sommaire Blog
         </nuxt-link>
         <a
           href="https://nuxtjs.org/"
@@ -29,7 +45,22 @@
           Nuxt.Js
         </a>
       </div>
+      <p>Si tu es développeure et que tu entretiens une veille technologique ou si simplement tu t'interesses à l'actualité du net et des nouvelles technologies de l'information, je peux te conseiller :</p>
+      <div class="links">
+        <a
+          href="https://myveille.herokuapp.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-custom button--green"
+        >
+          My Veille
+        </a>
+      </div>
+      <p>Veille axée exclusivement sur le développement web. C'est ti pas beau la vie?</p>
     </div>
+    <br>
+    <br>
+    <br>
   </div>
 </template>
 
@@ -49,6 +80,13 @@ export default {}
 }
 Logo {
   margin:2%;
+}
+.profile {
+  max-width: 4vw;
+  border-radius: 45%;
+}
+.ecusson {
+  margin:1vw;
 }
 .title {
   font-family:
