@@ -13,11 +13,12 @@
       </h2>
       <div>
         <figure>
-          <img src="~/static/HTML5.png" alt="logo html 5" class="ecusson">
-          <img src="~/static/css3.png" alt="logo css 3" class="ecusson">
-          <img src="~/static/JS.png" alt="logo JavaScript" class="ecusson">
-          <img src="~/static/node.png" alt="logo Node.js" class="ecusson">
-          <img src="~/static/mongo.png" alt="logo mongodb" class="ecusson">
+          <img src="~@/static/HTML5.png" alt="logo html 5" class="ecusson">
+          <img src="~@/static/css3.png" alt="logo css 3" class="ecusson">
+          <img src="~@/static/JS.png" alt="logo JavaScript" class="ecusson">
+          <img src="~@/static/node.png" alt="logo Node.js" class="ecusson">
+          <img src="~@/static/mongo.png" alt="logo mongodb" class="ecusson">
+          <img src="~@/static/vue.png" alt="logo vue js" class="ecusson">
         </figure>
       </div>
 
@@ -82,7 +83,7 @@ Logo {
   margin:2%;
 }
 .profile {
-  max-width: 4vw;
+  min-width: 7vw;
   border-radius: 45%;
 }
 .ecusson {
@@ -118,15 +119,31 @@ Logo {
   margin: 3%;
   padding-top: 15px;
 }
+@media screen and (max-width: 850px){
+  .profile {
+    min-width: 12vw;
+  }
+  .title {
+    padding: 1%;
+    font-size: 80px;
+  }
+  .links {
+    margin: 2%;
+  }
+}
 @media screen and (max-width: 470px) {
   .title {
     padding: 2%;
     font-size: 70px;
   }
   .links {
+    margin: 1%;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .profile {
+    min-width: 15vw;
   }
   .btn-custom {
     max-width: 60vw;
