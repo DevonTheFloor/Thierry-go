@@ -10,7 +10,7 @@
 <script>
 export default {
   async asyncData ({ $content }) {
-    const page = await $content('articles/langage').fetch()
+    const page = await $content('articles/langages').fetch()
 
     return {
       page
@@ -24,18 +24,18 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Les langes du web. Pourquoi y en t\'il tant? A quoi servent t\'ils? Mais ou est donc Ornocar?! Dans ce billet de blog de Thieery-go-dev, la réponse à toutes ces questions' },
+      { hid: 'description', name: 'description', content: 'Les langgaes du web. Pourquoi y en t\'il tant? A quoi servent t\'ils? Mais ou est donc Ornocar?! Dans ce billet de blog de Thieery-go-dev, la réponse à toutes ces questions' },
       // <!-- Open Graph data -->
       { property: 'og:title', content: 'Les langages du web' },
       { property: 'og:type', content: 'Web site' },
       { property: 'og:url', content: 'https://thierry-go-dev.fr/blog/langages' },
       { property: 'og:image', content: 'https://thierry-go-dev/mvicon.png' },
-      { property: 'og:description', content: 'Les langes du web. Pourquoi y en t\'il tant? A quoi servent t\'ils? Mais ou est donc Ornocar?! Dans ce billet de blog de Thieery-go-dev, la réponse à toutes ces questions' },
+      { property: 'og:description', content: 'Les langages du web. Pourquoi y en t\'il tant? A quoi servent t\'ils? Mais ou est donc Ornocar?! Dans ce billet de blog de Thieery-go-dev, la réponse à toutes ces questions' },
       // <!-- Twitter Card data -->
       { name: 'twitter:card', content: 'summary' },
-      { name: 'twitter:site', content: 'Thierry-go-dev' },
+      { name: 'twitter:site', content: 'Les langages du web' },
       { name: 'twitter:title', content: 'web site' },
-      { name: 'twitter:description', content: 'Les langes du web. Pourquoi y en t\'il tant? A quoi servent t\'ils? Mais ou est donc Ornocar?! Dans ce billet de blog de Thieery-go-dev, la réponse à toutes ces questions' },
+      { name: 'twitter:description', content: 'Les langages du web. Pourquoi y en t\'il tant? A quoi servent t\'ils? Mais ou est donc Ornocar?! Dans ce billet de blog de Thieery-go-dev, la réponse à toutes ces questions' },
       { name: 'twitter:creator', content: '@floor_dev' },
       // <!-- Twitter Summary card images must be at least 200x200px -->
       { name: 'twitter:image', content: 'https://thierry-go-dev/mvicon.png' }
