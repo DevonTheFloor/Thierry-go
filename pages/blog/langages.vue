@@ -67,10 +67,43 @@ body {
   border-radius: 10px;
 
 }
+article {
+  width: 100%;
+  text-align:  justify;
+}
+
+.vdo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+iframe {
+  max-width: 100%;
+}
+.navblog {
+  margin: 2%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn-blog {
+  margin:1%
+}
 h1 {
   color: #35495e;
 }
 p {
   color: #0d5747;
+  margin: 2%;
+}
+
+@media screen and (max-width: 500px){
+  p {
+    margin: 5%;
+  }
+  .vdo {
+    width: 100%;
+  }
 }
 </style>
