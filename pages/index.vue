@@ -34,7 +34,7 @@
         >
           Mon GitHub
         </a>
-        <nuxt-link to="blog/" class="btn-custom button--green">
+        <nuxt-link to="blog/sommaire" class="btn-custom button--green">
           Sommaire Blog
         </nuxt-link>
         <a

@@ -19,7 +19,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="css" scoped>
 
 html {
   background-color: #3b8070;
@@ -39,6 +39,9 @@ body {
   border: 5px solid #35495e;
   border-radius: 10px;
 
+}
+.title {
+  font-size: 50px;
 }
 h1 {
   color: #35495e;

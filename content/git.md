@@ -6,7 +6,7 @@ description: Tous les langages qui composent le developpement web.
 
 # Git
 
-<p>Beaucoup trop de gens et parmis eux des professionnels aguerris, définissent Git comme étant un logiciel de versionning, en bon franglais. C'est racourcit aussi court que simpliste.</p>
+<p>Beaucoup trop de gens et parmis eux des professionnels aguerris, définissent Git comme étant un logiciel de versionning, en bon franglais. C'est un racourcit aussi court que simpliste.</p>
 <p></p>
 
 # Github

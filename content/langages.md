@@ -19,7 +19,7 @@ description: Tous les langages qui composent le developpement web.
 <br>
 <br>
 <nav class="navblog">
-<nuxt-link to="/blog/" class=" btn-blog button--green">Sommaire Blog</nuxt-link>
+<nuxt-link to="/blog/sommaire" class=" btn-blog button--green">Sommaire Blog</nuxt-link>
 <nuxt-link to="/" class="btn-blog button--green">Accueil</nuxt-link>
 </nav>
 <br>
