@@ -22,9 +22,6 @@ description: Sommaire du blog
 
 <br>
 <br>
-<nav class="navblog ">
-    <nuxt-link to="/" class="btn-blog button--grey">Accueil</nuxt-link>
-    <nuxt-link to="https://nuxtjs.org" class="btn-blog button--grey"> Nuxt.js</nuxt-link>
-</nav>
+<Nav-blog />
 <br>
 <br>

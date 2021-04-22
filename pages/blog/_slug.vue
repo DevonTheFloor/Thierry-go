@@ -1,6 +1,6 @@
 <template>
   <article>
-    <h1 class="title">
+    <h1 class="title-blog">
       {{ page.title }}
     </h1>
     <nuxt-content :document="page" />
@@ -41,11 +41,17 @@ body {
 
 }
 article {
+  border: 2px solid yellow;
+  padding: 3%;
   width: 100%;
   text-align:  justify;
 }
-
+nuxt-content {
+  border: 2px solid violet;
+  margin: 20%;
+}
 .vdo {
+  margin: 3%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -63,15 +69,21 @@ iframe {
 .btn-blog {
   margin:1%
 }
-.title {
+.title-blog {
+  font-family: 'Dancing Script', cursive;
   font-size: 50px;
+  text-align: center;
 }
 h1 {
   color: #35495e;
 }
+h2 {
+  font-family: 'Dancing Script', cursive;
+}
 p {
-  margin: 4%;
-  color: #0d5747;
+  font-family: 'Cutive Mono', monospace;
+  margin: 2%;
+  color: #0f4d3f;
 }
 @media screen and (max-width: 850px){
   .profile {
