@@ -46,7 +46,7 @@
           Nuxt.Js
         </a>
       </div>
-      <p>Si tu es développeure et que tu entretiens une veille technologique ou si simplement tu t'interesses à l'actualité du net et des nouvelles technologies de l'information, je peux te conseiller :</p>
+      <p>Si tu es développeur et que tu entretiens une veille technologique ou si simplement tu t'interesses à l'actualité du net et des nouvelles technologies de l'information, je peux te conseiller :</p>
       <div class="links">
         <a
           href="https://myveille.herokuapp.com"
