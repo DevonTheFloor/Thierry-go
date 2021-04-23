@@ -41,13 +41,11 @@ body {
 
 }
 article {
-  border: 2px solid yellow;
   padding: 3%;
   width: 100%;
   text-align:  justify;
 }
 nuxt-content {
-  border: 2px solid violet;
   margin: 20%;
 }
 .vdo {
@@ -59,16 +57,7 @@ nuxt-content {
 iframe {
   max-width: 100%;
 }
-.navblog {
-  margin: 2%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.btn-blog {
-  margin:1%
-}
+
 .title-blog {
   font-family: 'Dancing Script', cursive;
   font-size: 50px;
@@ -83,7 +72,7 @@ h2 {
 p {
   font-family: 'Cutive Mono', monospace;
   margin: 2%;
-  color: #0f4d3f;
+  color: #0b352b;
 }
 @media screen and (max-width: 850px){
   .profile {
