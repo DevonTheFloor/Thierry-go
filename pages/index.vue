@@ -8,7 +8,7 @@
           <img class="profile" src="~static/profil.jpg">
         </figure>
       </h1>
-      <h2>
+      <h2 class="sub-title">
         Développeur d'application web et mobile, full stack JS.
       </h2>
       <div>
@@ -107,11 +107,11 @@ Logo {
   letter-spacing: 1px;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
+.sub-title {
+  font-weight: 200;
+  font-size: 35px;
+  color: #43516e;
+  word-spacing: 2px;
   padding-bottom: 15px;
 }
 

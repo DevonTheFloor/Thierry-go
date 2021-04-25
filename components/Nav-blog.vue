@@ -1,6 +1,6 @@
 <template>
   <nav class="navblog">
-    <nuxt-link to="/blog/" class=" button--green btn-blog btn-custom">
+    <nuxt-link to="/blog/sommaire" class=" button--green btn-blog btn-custom">
       Sommaire Blog
     </nuxt-link>
     <nuxt-link to="/" class="button--green btn-blog btn-custom">
@@ -11,7 +11,6 @@
 
 <style scoped>
 .navblog {
-  border:  2px solid blue;
   margin: 2%;
   width: 100%;
   display: flex;

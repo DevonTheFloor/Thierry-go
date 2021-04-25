@@ -6,6 +6,9 @@
 
 <style>
 html {
+  background-color: #469583;
+  margin: 1vw;
+  padding: 1vw;
   font-family:
     'Source Sans Pro',
     -apple-system,
@@ -23,7 +26,14 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
+body {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  border: 5px solid #355e50;
+  border-radius: 10px;
 
+}
 *,
 *::before,
 *::after {
