@@ -4,10 +4,20 @@
     <h2>Le développement web</h2>
     <div class="link__sommaire">
       <nuxt-link to="/blog/langages-du-web" class="link__sommaire-article">
-        Les langages du web
+        <div>
+          <h3> Les langages du web</h3>
+          <p>
+            Du HTML de 1991 jusqu'aux frameworks javascript en passant pas les seveurs Node.js
+          </p>
+        </div>
       </nuxt-link>
       <nuxt-link to="/blog/git-et-github" class="link__sommaire-article">
-        Git et Github
+        <div>
+          <h3>Git et Github</h3>
+          <p>
+            Le fameux content manager créer par Linus Thorvald himself et qui domine le monde du developpement logiciel.
+          </p>
+        </div>
       </nuxt-link>
     </div>
     <Nav-blog />
@@ -16,6 +26,10 @@
 
 <script>
 export default {
+  data () {
+    return {
+    }
+  },
   head: {
     title: 'Blog de Dev',
     htmlAttrs: {
@@ -86,6 +100,32 @@ iframe {
   display: flex;
   flex-direction: column;
 }
+.link__sommaire-article {
+  margin: 1%;
+  font-size: 1.2em;
+  border: 3px solid rgb(241, 241, 186);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.link__sommaire-article:hover {
+  border: 6px solid rgb(41, 236, 41);
+  box-shadow:4px 4px rgb(5, 134, 16);
+  background-color: rgb(255, 248, 248);
+}
+
+a {
+  text-decoration: none;
+  color: green;
+}
+a:hover {
+  color: rgb(41, 236, 41);
+}
+a:hover+h3 {
+  background-color: #469583;
+
+}
+
 .title-blog {
   font-family: 'Dancing Script', cursive;
   font-size: 50px;

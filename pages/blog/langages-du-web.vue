@@ -1,7 +1,7 @@
 <template>
   <article>
     <h1> Les langages du web</h1>
-    <h2>Article premier</h2>
+    <h2>Du HTML de 1991 jusqu'aux frameworks javascript en passant pas les seveurs Node.js</h2>
     <p>
       Le web te fascine, tu aimerais percer ses secrets?<br>
       Mais il est vrai que, de prime abord, il y a tellement d'informations, qui, qui plus est semblent contradictoires. Tantôt on te parle de JavaScript, tantôt de Python. Qu'est ce qui est vrai, qu'est ce qui est faut? Qu'est ce qui a changé au cours du temps et où est donc Ornicar?<br>
