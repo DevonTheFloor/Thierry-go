@@ -1,6 +1,7 @@
 ---
 title: GIT et Github
 description: Le fameux content manager créer par Linus Thorvald himself et qui domine le monde.
+img: https://cod-box.net/wp-content/uploads/2019/10/Tutoriel-GIT-Poweshell-install.png
 ---
 <br>
 

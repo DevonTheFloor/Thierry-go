@@ -12,27 +12,22 @@
 <script>
 export default {
   async asyncData ({ $content, params }) {
-    const page = await $content(params.slug || 'sommaire').fetch()
+    const page = await $content(params.slug || 'git-et-github').fetch()
 
     return {
       page
     }
-  },
-  data () {
-    return {
-      meta_title: this.page.title,
-      meta_description: this.page.description
-    }
-  },
+  }/*,
+
   head: {
-    title: this.meta_title,
+    title: 'Thierry\'dev Blog',
     htmlAttrs: {
       lang: 'fr'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: this.meta_description },
+      { hid: 'description', name: 'description', content: 'this.meta_description' },
       // <!-- Open Graph data -->
       { property: 'og:title', content: 'Thierry Go Dev' },
       { property: 'og:type', content: 'Web site' },
@@ -48,7 +43,7 @@ export default {
       // <!-- Twitter Summary card images must be at least 200x200px -->
       { name: 'twitter:image', content: 'https://thierry-go-dev/mvicon.png' }
     ]
-  }
+  } */
 }
 </script>
 

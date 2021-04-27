@@ -1,55 +1,44 @@
 <template>
   <article>
-    <h1> Sommaire du Blog</h1>
-    <h2>Le développement web</h2>
-    <div class="link__sommaire">
-      <nuxt-link to="/blog/langages-du-web" class="link__sommaire-article">
-        <div>
-          <h3> Les langages du web</h3>
-          <p>
-            Du HTML de 1991 jusqu'aux frameworks javascript en passant pas les seveurs Node.js
-          </p>
-        </div>
-      </nuxt-link>
-      <nuxt-link to="/blog/git-et-github" class="link__sommaire-article">
-        <div>
-          <h3>Git et Github</h3>
-          <p>
-            Le fameux content manager créer par Linus Thorvald himself et qui domine le monde du developpement logiciel.
-          </p>
-        </div>
-      </nuxt-link>
-    </div>
-    <Nav-blog />
+    <h1 class="title-blog">
+      {{ page.title }}
+      <p> {{ page.description }} </p>
+      <img :src="page.img">
+    </h1>
+    <nuxt-content :document="page" />
   </article>
 </template>
 
 <script>
 export default {
-  data () {
+  async asyncData ({ $content, params }) {
+    const page = await $content(params.slug || 'git-et-github').fetch()
+
     return {
+      page
     }
   },
+
   head: {
-    title: 'Blog de Dev',
+    title: 'Thierry\'dev Blog',
     htmlAttrs: {
       lang: 'fr'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Mon Blog' },
+      { hid: 'description', name: 'description', content: 'this.meta_description' },
       // <!-- Open Graph data -->
-      { property: 'og:title', content: 'Blog de Dev' },
+      { property: 'og:title', content: 'Thierry Go Dev' },
       { property: 'og:type', content: 'Web site' },
-      { property: 'og:url', content: 'https://thierry-go-dev.fr/sommaire' },
+      { property: 'og:url', content: 'https://thierry-go-dev.fr' },
       { property: 'og:image', content: 'https://thierry-go-dev/mvicon.png' },
-      { property: 'og:description', content: 'Bienvenue sur mon blog, car non, l\'ecrit n\'est pas mort.' },
+      { property: 'og:description', content: 'Thierry G. développeur d\'application web et mobile. Je suis ce qu\'on appelle un dev full stack JS dans le jargon. En français pour les autres: je programme en JavaScript côté client, bien evidement, mais aussi côté serveur.' },
       // <!-- Twitter Card data -->
       { name: 'twitter:card', content: 'summary' },
-      { name: 'twitter:site', content: '@floor_dev' },
-      { name: 'twitter:title', content: 'Bolg de Dev' },
-      { name: 'twitter:description', content: 'Bienvenue sur mon blog, car non, l\'ecrit n\'est pas mort.' },
+      { name: 'twitter:site', content: 'Thierry Go Dev' },
+      { name: 'twitter:title', content: 'Thierry Go Dev' },
+      { name: 'twitter:description', content: 'Thierry G. développeur d\'application web et mobile. Je suis ce qu\'on appelle un dev full stack JS dans le jargon. En français pour les autres: je programme en JavaScript côté client, bien evidement, mais aussi côté serveur.' },
       { name: 'twitter:creator', content: '@floor_dev' },
       // <!-- Twitter Summary card images must be at least 200x200px -->
       { name: 'twitter:image', content: 'https://thierry-go-dev/mvicon.png' }
@@ -57,7 +46,9 @@ export default {
   }
 }
 </script>
-<style>
+
+<style lang="css">
+
 html {
   background-color: #469583;
   margin: 1vw;
@@ -80,6 +71,12 @@ body {
 #__nuxt {
   width: 100%;
 }
+.nuxt-content-container {
+  width: 100%;
+}
+#_layout {
+  width: 100%;
+}
 article {
   padding: 5%;
   text-align: justify;
@@ -96,35 +93,6 @@ iframe {
   max-width: 100%;
   max-height: auto;
 }
-.link__sommaire {
-  display: flex;
-  flex-direction: column;
-}
-.link__sommaire-article {
-  margin: 1%;
-  font-size: 1.2em;
-  border: 3px solid rgb(241, 241, 186);
-  border-radius: 10px;
-  text-align: center;
-}
-
-.link__sommaire-article:hover {
-  border: 6px solid rgb(41, 236, 41);
-  box-shadow:4px 4px rgb(5, 134, 16);
-  background-color: rgb(255, 248, 248);
-}
-
-a {
-  text-decoration: none;
-  color: green;
-}
-a:hover {
-  color: rgb(41, 236, 41);
-}
-a:hover+h3 {
-  background-color: #469583;
-
-}
 
 .title-blog {
   font-family: 'Dancing Script', cursive;
@@ -135,7 +103,9 @@ h1 {
   width: 100%;
   color: #469583;
 }
-
+h2 {
+  font-family: 'Dancing Script', cursive;
+}
 p {
   font-family: 'Cutive Mono', monospace;
   margin: 2%;

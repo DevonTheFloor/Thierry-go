@@ -69,5 +69,7 @@ body {
   color: #fff;
   background-color: #35495e;
 }
-
+h2 {
+  font-family: 'Dancing Script', cursive;
+}
 </style>
