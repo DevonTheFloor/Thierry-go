@@ -2,6 +2,7 @@
   <article>
     <h1> Git et github</h1>
     <h2>Le fameux content manager créer par Linus Thorvald himself et qui domine le monde.</h2>
+    <img src="https://karac.ch/storage/articles/May2019/n42iV2mUI75NXcinirs2.jpg">
     <h3>Git</h3>
     <p>
       Beaucoup trop de gens et parmis eux des professionnels aguerri, définissent Git comme étant un logiciel de versionning, en bon franglais. C'est un racourcit aussi court que simpliste.
@@ -79,8 +80,8 @@ export default {
       { property: 'og:title', content: 'Git et Github' },
       { property: 'og:type', content: 'Web site' },
       { property: 'og:url', content: 'https://thierry-go-dev.fr/blog/git-et-github' },
-      { property: 'og:image', content: 'https://thierry-go-dev/mvicon.png' },
-      { property: 'og:description', content: '' },
+      { property: 'og:image', content: 'https://karac.ch/storage/articles/May2019/n42iV2mUI75NXcinirs2jpg' },
+      { property: 'og:description', content: 'Le fameux content manager créer par Linus Thorvald himself et qui domine le monde du developpement logiciel' },
       // <!-- Twitter Card data -->
       { name: 'twitter:card', content: 'summary' },
       { name: 'twitter:site', content: '@floor_dev' },
@@ -88,7 +89,7 @@ export default {
       { name: 'twitter:description', content: 'Le fameux content manager créer par Linus Thorvald himself et qui domine le monde du developpement logiciel' },
       { name: 'twitter:creator', content: '@floor_dev' },
       // <!-- Twitter Summary card images must be at least 200x200px -->
-      { name: 'twitter:image', content: 'https://thierry-go-dev/mvicon.png' }
+      { name: 'twitter:image', content: 'Le fameux content manager créer par Linus Thorvald himself et qui domine le monde du developpement logiciel' }
     ]
   }
 }
