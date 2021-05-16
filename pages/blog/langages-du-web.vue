@@ -1,7 +1,10 @@
 <template>
   <article>
-    <h1> Les langages du web</h1>
-    <h2>Du HTML de 1991 jusqu'aux frameworks javascript en passant pas les seveurs Node.js</h2>
+    <header>
+      <h1> Les langages du web</h1>
+      <h2>Du HTML de 1991 jusqu'aux frameworks javascript en passant pas les seveurs Node.js</h2>
+      <img src="~@/assets/img/blog/web.jpeg" class="illustration">
+    </header>
     <p>
       Le web te fascine, tu aimerais percer ses secrets?<br>
       Mais il est vrai que, de prime abord, il y a tellement d'informations, qui, qui plus est semblent contradictoires. Tantôt on te parle de JavaScript, tantôt de Python. Qu'est ce qui est vrai, qu'est ce qui est faut? Qu'est ce qui a changé au cours du temps et où est donc Ornicar?<br>
@@ -40,10 +43,10 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Tous les langages qui composent le developpement web.Il y en a trois complètement inspensable et qui s\'execute côté client et une plethore côté serveur.' },
       // <!-- Open Graph data -->
-      { property: 'og:title', content: 'Blog de Dev' },
-      { property: 'og:type', content: 'Web site' },
+      { property: 'og:title', content: 'Les langages du web' },
+      { property: 'og:type', content: 'Article' },
       { property: 'og:url', content: 'https://thierry-go-dev.fr/blog/langages-du-web' },
-      { property: 'og:image', content: 'https://thierry-go-dev/mvicon.png' },
+      { property: 'og:image', content: '~@/assets/img/blog/web.jpeg' },
       { property: 'og:description', content: 'Tous les langages qui composent le developpement web.Il y en a trois complètement inspensable et qui s\'execute côté client et une plethore côté serveur.' },
       // <!-- Twitter Card data -->
       { name: 'twitter:card', content: 'summary' },
@@ -52,7 +55,7 @@ export default {
       { name: 'twitter:description', content: 'Tous les langages qui composent le developpement web.Il y en a trois complètement inspensable et qui s\'execute côté client et une plethore côté serveur.' },
       { name: 'twitter:creator', content: '@floor_dev' },
       // <!-- Twitter Summary card images must be at least 200x200px -->
-      { name: 'twitter:image', content: 'https://thierry-go-dev/mvicon.png' }
+      { name: 'twitter:image', content: '~@/assets/img/blog/web.jpeg' }
     ]
   }
 }
