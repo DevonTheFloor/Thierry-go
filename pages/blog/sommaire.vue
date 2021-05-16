@@ -11,7 +11,7 @@
           </p>
         </div>
       </nuxt-link>
-      <nuxt-link to="/blog/git-et-github" class="link__sommaire-article">
+      <nuxt-link to="/blog/git-n-github" class="link__sommaire-article">
         <div>
           <h3>Git et Github</h3>
           <p>

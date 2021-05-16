@@ -119,6 +119,7 @@ Logo {
   margin: 3%;
   padding-top: 15px;
 }
+
 @media screen and (max-width: 850px){
   .profile {
     min-width: 12vw;

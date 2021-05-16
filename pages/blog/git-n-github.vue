@@ -1,7 +1,21 @@
 <template>
   <article>
-    <h1> Git et github</h1>
-    <h2>Le fameux content manager créer par Linus Thorvald himself et qui domine le monde.</h2>
+    <header>
+      <h1> Git et github</h1>
+      <h2>Le fameux source content manager créer par Linus Thorvald himself et qui domine le monde.</h2>
+      <img src="~@/assets/img/blog/gitetgithub.jpg" class="illustration">
+    </header>
+    <div class="vdo">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/4HwbgpHND9I"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      />
+    </div>
     <h3>Git</h3>
     <p>
       Beaucoup trop de gens et parmis eux des professionnels aguerri, définissent Git comme étant un logiciel de versionning, en bon franglais. C'est un racourcit aussi court que simpliste.
@@ -33,21 +47,9 @@
       Bref , comme la quasi totalité des developpeurs logiciel, quand tu auras testé Git et github, la vie deviendra tout simplement impossible sans. Et ça c'est en utilisation basique, car il existe aussi Git Flow, mais c'est un autre sujet qui sera traité ailleurs.
     </p>
     <p>
-      En attendant, tu peux commencer à apprendre Git via mes vidéos sur le sujet et aussi regarder la conférence faite par Linus Thorvald himself dans les locaux de Google en 2007 pour présenter git (en anglais).<br>
+      En attendant, tu peux commencer à apprendre <a href="https://www.youtube.com/watch?v=tBJ0UatJxCY&list=PLiXQZWEbJZMqNbFuToYf-A4vntjxN1G6A" target="_blank">Git via mes vidéos sur le sujet</a>  et aussi regarder la conférence faite par Linus Thorvald himself dans les locaux de Google en 2007 pour présenter git (en anglais).<br>
       Je te dis merci, ciao et à la semaine prochaine!
     </p>
-    <p>PLay list Git et Github</p>
-    <div class="vdo">
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/tBJ0UatJxCY"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      />
-    </div>
     <p>Tech Talk de Linus Thoravld (créateur de git et de Linux) chez google en 2007: </p>
     <div class="vdo">
       <iframe
@@ -74,21 +76,21 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Le fameux content manager créer par Linus Thorvald himself et qui domine le monde du developpement logiciel' },
+      { hid: 'description', name: 'description', content: 'Le fameux source content manager créer par Linus Thorvald himself et qui domine le monde du developpement logiciel' },
       // <!-- Open Graph data -->
       { property: 'og:title', content: 'Git et Github' },
-      { property: 'og:type', content: 'Web site' },
+      { property: 'og:type', content: 'article' },
       { property: 'og:url', content: 'https://thierry-go-dev.fr/blog/git-et-github' },
-      { property: 'og:image', content: 'https://thierry-go-dev/mvicon.png' },
-      { property: 'og:description', content: '' },
+      { property: 'og:image', content: '-@/assets/img/blog/gitetgithu.jpg' },
+      { property: 'og:description', content: 'Le fameux source content manager créer par Linus Thorvald himself et qui domine le monde du developpement logiciel' },
       // <!-- Twitter Card data -->
       { name: 'twitter:card', content: 'summary' },
       { name: 'twitter:site', content: '@floor_dev' },
-      { name: 'twitter:title', content: 'Bolg de Dev' },
-      { name: 'twitter:description', content: 'Le fameux content manager créer par Linus Thorvald himself et qui domine le monde du developpement logiciel' },
+      { name: 'twitter:title', content: 'Git et Github' },
+      { name: 'twitter:description', content: 'Le fameux source content manager créer par Linus Thorvald himself et qui domine le monde du developpement logiciel' },
       { name: 'twitter:creator', content: '@floor_dev' },
       // <!-- Twitter Summary card images must be at least 200x200px -->
-      { name: 'twitter:image', content: 'https://thierry-go-dev/mvicon.png' }
+      { name: 'twitter:image', content: '-@/assets/img/blog/gitetgithub.jpg' }
     ]
   }
 }
@@ -112,7 +114,16 @@ body {
   border-radius: 10px;*/
 
 }
-
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.illustration{
+  max-width: 500px;
+  max-height: auto;
+}
 article {
   padding: 5%;
   text-align: justify;
