@@ -3,7 +3,7 @@
     <h1> Sommaire du Blog</h1>
     <h2>Le développement web</h2>
     <div class="link__sommaire">
-      <nuxt-link to="/blog/langages-du-web" class="link__sommaire-article">
+      <nuxt-link to="langages-du-web" class="link__sommaire-article">
         <div>
           <h3> Les langages du web</h3>
           <p>
@@ -11,7 +11,7 @@
           </p>
         </div>
       </nuxt-link>
-      <nuxt-link to="/blog/git-n-github" class="link__sommaire-article">
+      <nuxt-link to="git-n-github" class="link__sommaire-article">
         <div>
           <h3>Git et Github</h3>
           <p>

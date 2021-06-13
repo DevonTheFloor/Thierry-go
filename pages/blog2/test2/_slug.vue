@@ -17,10 +17,10 @@ export default {
     return {
       page
     }
-  }/*,
+  },
 
   head: {
-    title: 'Thierry\'dev Blog',
+    title: 'Thierry\'s dev Blog',
     htmlAttrs: {
       lang: 'fr'
     },
@@ -43,7 +43,7 @@ export default {
       // <!-- Twitter Summary card images must be at least 200x200px -->
       { name: 'twitter:image', content: 'https://thierry-go-dev/mvicon.png' }
     ]
-  } */
+  }
 }
 </script>
 
