@@ -1,33 +1,36 @@
 <template>
-  <article>
-    <h1> Sommaire du Blog</h1>
-    <h2>Le développement web</h2>
-    <div class="link__sommaire">
-      <nuxt-link to="/blog/langages-du-web" class="link__sommaire-article">
-        <div>
-          <h3> Les langages du web</h3>
-          <p>
-            Du HTML de 1991 jusqu'aux frameworks javascript en passant pas les seveurs Node.js
-          </p>
+  <div>
+    <h1>Sommaire</h1>
+    <ul>
+      <li v-for="article in sommaire" :key="article.id">
+        <div class="print">
+          <h3>{{ article.title }}</h3>
+          <p> {{ article.description }} </p>
+          <nuxt-link :to="`/blog/${article.slug}`" class="btn-custom button--green">
+            Lire
+          </nuxt-link>
         </div>
-      </nuxt-link>
-      <nuxt-link to="/blog/git-n-github" class="link__sommaire-article">
-        <div>
-          <h3>Git et Github</h3>
-          <p>
-            Le fameux content manager créé par Linus Thorvald himself et qui domine le monde du developpement logiciel.
-          </p>
-        </div>
-      </nuxt-link>
-    </div>
-    <Nav-blog />
-  </article>
+      </li>
+    </ul>
+    <!--<p>{{ page.description }}</p>
+    <img :src="page.img" class="illustration">-->
+    <nuxt-content :document="sommaire" />
+  </div>
 </template>
 
 <script>
 export default {
-  data () {
+  async asyncData ({ $content, error }) {
+    const sommaire = await $content('articles').only(['title', 'description', 'slug'])
+      .fetch()
+      .catch((err) => {
+        // eslint-disable-next-line no-console
+        console.error(err)
+        error({ statusCode: 404, message: 'Page not found' })
+      })
+
     return {
+      sommaire
     }
   },
   head: {
@@ -57,29 +60,34 @@ export default {
   }
 }
 </script>
-<style>
-html {
-  background-color: #469583;
-  margin: 1vw;
-  padding: 1vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-body {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  border: 5px solid #355e50;
-  border-radius: 10px;
 
+<style>
+h1 {
+  text-align: center;
+  margin: 1%;
 }
-#__nuxt {
-  width: 100%;
+li {
+  list-style: none;
+  border: 2px solid red;
+  margin: 2%;
+  padding: 1%;
 }
+.print {
+  justify-content: center;
+}
+.link__sommaire-article {
+  margin: 1%;
+  font-size: 1.2em;
+  border: 3px solid rgb(241, 241, 186);
+  border-radius: 10px;
+  text-align: center;
+}
+.link__sommaire-article:hover {
+  border: 6px solid rgb(41, 236, 41);
+  box-shadow:4px 4px rgb(5, 134, 16);
+  background-color: rgb(255, 248, 248);
+}
+
 article {
   padding: 5%;
   text-align: justify;
@@ -96,35 +104,6 @@ iframe {
   max-width: 100%;
   max-height: auto;
 }
-.link__sommaire {
-  display: flex;
-  flex-direction: column;
-}
-.link__sommaire-article {
-  margin: 1%;
-  font-size: 1.2em;
-  border: 3px solid rgb(241, 241, 186);
-  border-radius: 10px;
-  text-align: center;
-}
-
-.link__sommaire-article:hover {
-  border: 6px solid rgb(41, 236, 41);
-  box-shadow:4px 4px rgb(5, 134, 16);
-  background-color: rgb(255, 248, 248);
-}
-
-a {
-  text-decoration: none;
-  color: green;
-}
-a:hover {
-  color: rgb(41, 236, 41);
-}
-a:hover+h3 {
-  background-color: #469583;
-
-}
 
 .title-blog {
   font-family: 'Dancing Script', cursive;
@@ -134,9 +113,13 @@ a:hover+h3 {
 h1 {
   width: 100%;
   color: #469583;
+  margin: auto;
+  border: 2 px solid green;
 }
 h2 {
   font-family: 'Dancing Script', cursive;
+  color: #569546;
+  margin: 1%;
 }
 p {
   font-family: 'Cutive Mono', monospace;

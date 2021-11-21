@@ -10,8 +10,8 @@
 <script>
 export default {
   async asyncData ({ $content, params, error }) {
-    const slug = params.slug || 'sommaire'
-    const page = await $content(slug)
+    // const slug = params.slug || '/sommaire'
+    const page = await $content('articles', params.slug)
       .fetch()
       .catch((err) => {
         // eslint-disable-next-line no-console
