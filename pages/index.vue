@@ -76,28 +76,28 @@ export default {
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { hid: 'description', name: 'description', content: 'Thierry G. développeur d\'application web et mobile, full stack JS, stack: Node.js, Vue.js, Nuxt.js, MongoDB.' },
+        { hid: 'description', name: 'description', content: 'Thierry G. développeur d\'application web et mobile, full stack JS, stack: Node.js, Vue.js, Nuxt.js, NativeScript, MongoDB.' },
         // <!-- Open Graph data -->
         { property: 'og:title', content: 'Thierry Go Dev' },
         { property: 'og:type', content: 'Web site' },
         { property: 'og:url', content: 'https://thierry-go-dev.fr' },
         { property: 'og:image', content: 'https://thierry-go-dev/mvicon.png' },
-        { property: 'og:description', content: 'Thierry G. développeur d\'application web et mobile, full stack JS, stack: Node.js, Vue.js, Nuxt.js, MongoDB.' },
+        { property: 'og:description', content: 'Thierry G. développeur d\'application web et mobile, full stack JS, stack: Node.js, Vue.js, Nuxt.js, NativeScript, MongoDB.' },
         // <!-- Twitter Card data -->
         { name: 'twitter:card', content: 'summary' },
         { name: 'twitter:site', content: 'Thierry Go Dev' },
         { name: 'twitter:title', content: 'Thierry Go Dev' },
-        { name: 'twitter:description', content: 'Thierry G. développeur d\'application web et mobile, full stack JS, stack: Node.js, Vue.js, Nuxt.js, MongoDB.' },
+        { name: 'twitter:description', content: 'Thierry G. développeur d\'application web et mobile, full stack JS, stack: Node.js, Vue.js, Nuxt.js, NativeScript, MongoDB.' },
         { name: 'twitter:creator', content: '@floor_dev' },
-        // <!-- Twitter Summary card images must be at least 200x200px -->
+        // Twitter Summary card images must be at least 200x200px
         { name: 'twitter:image', content: 'https://thierry-go-dev/mvicon.png' }
-      ],
+      ] /*,
       link: [
         { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap' },
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-      ]
+      ] */
     }
   }
 }
