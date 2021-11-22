@@ -31,30 +31,32 @@ export default {
       sommaire
     }
   },
-  head: {
-    title: 'Blog de Dev',
-    htmlAttrs: {
-      lang: 'fr'
-    },
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Mon Blog' },
-      // <!-- Open Graph data -->
-      { property: 'og:title', content: 'Blog de Dev' },
-      { property: 'og:type', content: 'Web site' },
-      { property: 'og:url', content: 'https://thierry-go-dev.fr/sommaire' },
-      { property: 'og:image', content: 'https://thierry-go-dev/mvicon.png' },
-      { property: 'og:description', content: 'Bienvenue sur mon blog, car non, la vidéo n\'a toujours pas remplacé les artciles.' },
-      // <!-- Twitter Card data -->
-      { name: 'twitter:card', content: 'summary' },
-      { name: 'twitter:site', content: '@floor_dev' },
-      { name: 'twitter:title', content: 'Bolg de Dev' },
-      { name: 'twitter:description', content: 'Bienvenue sur mon blog, car non, la vidéo n\'a toujours pas remplacé les artciles.' },
-      { name: 'twitter:creator', content: '@floor_dev' },
-      // <!-- Twitter Summary card images must be at least 200x200px -->
-      { name: 'twitter:image', content: 'https://thierry-go-dev/mvicon.png' }
-    ]
+  head () {
+    return {
+      title: 'Blog de Dev',
+      htmlAttrs: {
+        lang: 'fr'
+      },
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { hid: 'description', name: 'description', content: 'Mon Blog' },
+        // <!-- Open Graph data -->
+        { property: 'og:title', content: 'Blog de Dev' },
+        { property: 'og:type', content: 'Web site' },
+        { property: 'og:url', content: 'https://thierry-go-dev.fr/sommaire' },
+        { property: 'og:image', content: 'https://thierry-go-dev/mvicon.png' },
+        { property: 'og:description', content: 'Bienvenue sur mon blog, car non, la vidéo n\'a toujours pas remplacé les artciles.' },
+        // <!-- Twitter Card data -->
+        { name: 'twitter:card', content: 'summary' },
+        { name: 'twitter:site', content: '@floor_dev' },
+        { name: 'twitter:title', content: 'Bolg de Dev' },
+        { name: 'twitter:description', content: 'Bienvenue sur mon blog, car non, la vidéo n\'a toujours pas remplacé les artciles.' },
+        { name: 'twitter:creator', content: '@floor_dev' },
+        // <!-- Twitter Summary card images must be at least 200x200px -->
+        { name: 'twitter:image', content: 'https://thierry-go-dev/mvicon.png' }
+      ]
+    }
   }
 }
 </script>
