@@ -10,7 +10,6 @@
 <script>
 export default {
   async asyncData ({ $content, params, error }) {
-    // const slug = params.slug || '/sommaire'
     const page = await $content('articles', params.slug)
       .fetch()
       .catch((err) => {
@@ -31,9 +30,13 @@ export default {
         // Open Graph
         { hid: 'og:title', property: 'og:title', content: this.page.title },
         { hid: 'og:description', property: 'og:description', content: this.page.description },
+        { property: 'og:type', content: 'Web site' },
+        { property: 'og:image', content: this.page.img },
         // Twitter Card
         { hid: 'twitter:title', name: 'twitter:title', content: this.page.title },
-        { hid: 'twitter:description', name: 'twitter:description', content: this.page.description }
+        { hid: 'twitter:description', name: 'twitter:description', content: this.page.description },
+        // Twitter Summary card images must be at least 200x200px
+        { name: 'twitter:image', content: this.page.img }
       ]
     }
   }
@@ -41,24 +44,6 @@ export default {
 </script>
 
 <style>
-nuxt-content {
-  padding: 10%;
-}
-nuxt-link {
-  width: 100%;
-}
-.link__sommaire-article {
-  margin: 1%;
-  font-size: 1.2em;
-  border: 3px solid rgb(241, 241, 186);
-  border-radius: 10px;
-  text-align: center;
-}
-.link__sommaire-article:hover {
-  border: 6px solid rgb(41, 236, 41);
-  box-shadow:4px 4px rgb(5, 134, 16);
-  background-color: rgb(255, 248, 248);
-}
 
 article {
   padding: 5%;
@@ -81,6 +66,12 @@ iframe {
   font-family: 'Dancing Script', cursive;
   font-size: 50px;
   text-align: center;
+}
+.illustration {
+  margin: auto;
+}
+img {
+  margin: auto;
 }
 h1 {
   width: 100%;
