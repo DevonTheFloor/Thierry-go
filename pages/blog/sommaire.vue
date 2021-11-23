@@ -13,6 +13,16 @@
       </li>
     </ul>
     <nuxt-content :document="sommaire" />
+    <br>
+    <br>
+    <br>
+    <div class="div-btn">
+      <nuxt-link to="/" class="button--green btn-blog btn-custom">
+        Accueil
+      </nuxt-link>
+    </div>
+    <br>
+    <br>
   </div>
 </template>
 
@@ -99,7 +109,11 @@ article {
   text-align: justify;
   width: 100%;
 }
-
+.div-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .vdo {
   margin: 3%;
   width: 100%;

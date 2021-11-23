@@ -47,6 +47,14 @@ Et enfin, il ne se trouve au premier niveau de la requête car c'est un critère
       
 
    Et dans le mongo shell, n'oublies pas les guillemets.
-   Sur ce, amuses toi bien et à la semaine prochaine pour de superbes nouvelles aventure en Javascript !!
+   Sur ce, amuses toi bien et à la semaine prochaine pour de superbes nouvelles aventure en Javascript !!   
+   
+    
+<br>
+<br>
+<br>
+<Nav-blog />
+<br>
+<br>
 
 

@@ -2,7 +2,9 @@
   <div>
     <h1>{{ page.title }}</h1>
     <p>{{ page.description }}</p>
-    <img :src="page.img" class="illustration">
+    <figure class="illustration">
+      <img :src="page.img">
+    </figure>
     <nuxt-content :document="page" />
   </div>
 </template>
@@ -51,9 +53,9 @@ article {
   width: 100%;
 }
 
-pre[class*="language-"] {
+/*pre[class*="language-"] {
 
-}
+}*/
 code {
   display: block;
   padding: 2%;
@@ -74,14 +76,15 @@ div.nuxt-content-highlight {
   margin: 2% auto;
 }
 .vdo {
-  margin: 3%;
-  width: 100%;
+  width: 90%;
+  margin: 0%;
   display: flex;
   justify-content: center;
 }
 iframe {
-  max-width: 100%;
-  max-height: auto;
+  max-width: 75%;
+  min-width: 40%;
+  height: 315px;
 }
 
 .title-blog {
@@ -90,9 +93,14 @@ iframe {
   text-align: center;
 }
 .illustration {
-  margin: auto;
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  justify-items: center;
 }
-img {
+.illustration img {
+  max-width: 60%;
+  border: solid 1px green;
   margin: auto;
 }
 h1 {
@@ -109,6 +117,7 @@ h2 {
 p {
   font-family: 'Cutive Mono', monospace;
   margin: 2%;
+  padding: 2%;
   color: #01130f;
   text-align: justify;
 }
@@ -123,9 +132,9 @@ p {
   .links {
     margin: 2%;
   }
-  pre[class*="language-"] {
-    max-width: 70%;
-    min-width: 65%;
+  div.nuxt-content-highlight {
+  max-width: 70%;
+  min-width: 65%;
   }
 }
 @media screen and (max-width: 470px) {
@@ -147,11 +156,15 @@ p {
     margin: 1vh;
   }
   p {
-    padding: 1%;
+    padding: 5%;
   }
-  pre[class*="language-"] {
+  /*pre[class*="language-"] {
     max-width: 90%;
     min-width: 85%;
+  }*/
+  div.nuxt-content-highlight {
+  max-width: 90%;
+  min-width: 85%;
   }
 }
 </style>

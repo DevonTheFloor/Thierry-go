@@ -1,6 +1,6 @@
 <template>
   <nav class="navblog">
-    <nuxt-link to="/blog/sommaire" class=" button--green btn-blog btn-custom">
+    <nuxt-link to="/blog/sommaire" class=" button--green btn-blog btn-custom som">
       Sommaire Blog
     </nuxt-link>
     <nuxt-link to="/" class="button--green btn-blog btn-custom">
