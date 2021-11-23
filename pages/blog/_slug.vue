@@ -51,6 +51,28 @@ article {
   width: 100%;
 }
 
+pre[class*="language-"] {
+
+}
+code {
+  display: block;
+  padding: 2%;
+  width: 90%;
+  margin: auto;
+}
+.filename {
+  display: block;
+  text-align: center;
+  color: rgb(87, 197, 77);
+}
+div.nuxt-content-highlight {
+  background-color: #eaf5e7;
+  display: block;
+  border: 1px solid grey;
+  max-width: 60%;
+  min-width: 55%;
+  margin: 2% auto;
+}
 .vdo {
   margin: 3%;
   width: 100%;
@@ -76,7 +98,7 @@ img {
 h1 {
   width: 100%;
   color: #469583;
-  margin: auto;
+  text-align: center;
   border: 2 px solid green;
 }
 h2 {
@@ -88,6 +110,7 @@ p {
   font-family: 'Cutive Mono', monospace;
   margin: 2%;
   color: #01130f;
+  text-align: justify;
 }
 @media screen and (max-width: 850px){
   .profile {
@@ -99,6 +122,10 @@ p {
   }
   .links {
     margin: 2%;
+  }
+  pre[class*="language-"] {
+    max-width: 70%;
+    min-width: 65%;
   }
 }
 @media screen and (max-width: 470px) {
@@ -121,6 +148,10 @@ p {
   }
   p {
     padding: 1%;
+  }
+  pre[class*="language-"] {
+    max-width: 90%;
+    min-width: 85%;
   }
 }
 </style>

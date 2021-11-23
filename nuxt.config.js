@@ -60,7 +60,7 @@ export default {
     apiPrefix: '_content',
     dir: 'content',
     fullTextSearchFields: ['title', 'description', 'slug', 'text'],
-    nestedProperties: [],
+    nestedProperties: ['categories.slug'],
     markdown: {
       externalLinks: {},
       footnotes: {
