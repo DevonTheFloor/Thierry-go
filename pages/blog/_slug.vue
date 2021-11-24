@@ -136,6 +136,10 @@ p {
   max-width: 70%;
   min-width: 65%;
   }
+  p {
+    font-size: 1.3em;
+
+  }
 }
 @media screen and (max-width: 470px) {
   .title {

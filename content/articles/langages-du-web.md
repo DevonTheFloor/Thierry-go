@@ -1,6 +1,6 @@
 ---
 title: Les langages du web
-description: Tous les langages qui composent le developpement web.Il y en a trois complètement inspensable et qui s'execute côté client et une plethore côté serveur.   
+description: Tous les langages qui composent le developpement web.Il y en a trois complètement inspensable et qui s'executent côté client et une plethore côté serveur.   
 img: https://thierry-go-dev.fr/tourn/images/blog/web.jpeg   
 ---  
 
@@ -19,7 +19,7 @@ C'est en 1991 que tout commença avec un protocole: le HTTP. Et un langage: le H
 Pour la suite je te laisse visionner la vidéo ci dessous.   
 Et n'oublie pas de régler le convecteur temporel pour revenir!width="560" height="315"   
    
-   
+
 
 
 <div class="vdo">
