@@ -119,7 +119,6 @@ p {
   margin: 2%;
   padding: 2%;
   color: #01130f;
-  text-align: justify;
 }
 @media screen and (max-width: 850px){
   .profile {
@@ -137,7 +136,7 @@ p {
   min-width: 65%;
   }
   p {
-    font-size: 1.3em;
+    font-size: 1.25em;
 
   }
 }
