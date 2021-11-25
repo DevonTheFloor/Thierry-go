@@ -2,9 +2,9 @@
   <div>
     <h1>Sommaire</h1>
     <ul>
-      <li v-for="article in sommaire" :key="article.id">
+      <li v-for="article in sommaire" :key="article.id" class="link__sommaire-article">
         <div class="print">
-          <h3>{{ article.title }}</h3>
+          <h2>{{ article.title }}</h2>
           <p> {{ article.description }} </p>
           <nuxt-link :to="`/blog/${article.slug}`" class="btn-custom button--green">
             Lire
@@ -12,9 +12,17 @@
         </div>
       </li>
     </ul>
-    <!--<p>{{ page.description }}</p>
-    <img :src="page.img" class="illustration">-->
     <nuxt-content :document="sommaire" />
+    <br>
+    <br>
+    <br>
+    <div class="div-btn">
+      <nuxt-link to="/" class="button--green btn-blog btn-custom">
+        Accueil
+      </nuxt-link>
+    </div>
+    <br>
+    <br>
   </div>
 </template>
 
@@ -33,30 +41,32 @@ export default {
       sommaire
     }
   },
-  head: {
-    title: 'Blog de Dev',
-    htmlAttrs: {
-      lang: 'fr'
-    },
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Mon Blog' },
-      // <!-- Open Graph data -->
-      { property: 'og:title', content: 'Blog de Dev' },
-      { property: 'og:type', content: 'Web site' },
-      { property: 'og:url', content: 'https://thierry-go-dev.fr/sommaire' },
-      { property: 'og:image', content: 'https://thierry-go-dev/mvicon.png' },
-      { property: 'og:description', content: 'Bienvenue sur mon blog, car non, l\'ecrit n\'est pas mort.' },
-      // <!-- Twitter Card data -->
-      { name: 'twitter:card', content: 'summary' },
-      { name: 'twitter:site', content: '@floor_dev' },
-      { name: 'twitter:title', content: 'Bolg de Dev' },
-      { name: 'twitter:description', content: 'Bienvenue sur mon blog, car non, l\'ecrit n\'est pas mort.' },
-      { name: 'twitter:creator', content: '@floor_dev' },
-      // <!-- Twitter Summary card images must be at least 200x200px -->
-      { name: 'twitter:image', content: 'https://thierry-go-dev/mvicon.png' }
-    ]
+  head () {
+    return {
+      title: 'Blog de Dev',
+      htmlAttrs: {
+        lang: 'fr'
+      },
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { hid: 'description', name: 'description', content: 'Mon Blog' },
+        // <!-- Open Graph data -->
+        { property: 'og:title', content: 'Blog de Dev' },
+        { property: 'og:type', content: 'Web site' },
+        { property: 'og:url', content: 'https://thierry-go-dev.fr/sommaire' },
+        { property: 'og:image', content: 'https://thierry-go-dev/mvicon.png' },
+        { property: 'og:description', content: 'Bienvenue sur mon blog, car non, la vidéo n\'a toujours pas remplacé les artciles.' },
+        // <!-- Twitter Card data -->
+        { name: 'twitter:card', content: 'summary' },
+        { name: 'twitter:site', content: '@floor_dev' },
+        { name: 'twitter:title', content: 'Bolg de Dev' },
+        { name: 'twitter:description', content: 'Bienvenue sur mon blog, car non, la vidéo n\'a toujours pas remplacé les artciles.' },
+        { name: 'twitter:creator', content: '@floor_dev' },
+        // <!-- Twitter Summary card images must be at least 200x200px -->
+        { name: 'twitter:image', content: 'https://thierry-go-dev/mvicon.png' }
+      ]
+    }
   }
 }
 </script>
@@ -66,12 +76,17 @@ h1 {
   text-align: center;
   margin: 1%;
 }
+
 li {
   list-style: none;
-  border: 2px solid red;
-  margin: 2%;
+  margin: 3%;
   padding: 1%;
 }
+ul {
+  padding: 0px;
+  margin: 3%;
+}
+
 .print {
   justify-content: center;
 }
@@ -86,6 +101,7 @@ li {
   border: 6px solid rgb(41, 236, 41);
   box-shadow:4px 4px rgb(5, 134, 16);
   background-color: rgb(255, 248, 248);
+  box-shadow: 5px 5px 5px 5px rgb(76, 112, 4);
 }
 
 article {
@@ -93,7 +109,11 @@ article {
   text-align: justify;
   width: 100%;
 }
-
+.div-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .vdo {
   margin: 3%;
   width: 100%;

@@ -4,13 +4,13 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Thierry-go-Dev',
+    // title: 'Thierry-go-Dev',
     htmlAttrs: {
       lang: 'fr'
     },
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' } /*,
       { hid: 'description', name: 'description', content: 'Thierry G. développeur d\'application web et mobile. Je suis ce qu\'on appelle un dev full stack JS dans le jargon. En français pour les autres: je programme en JavaScript côté client, bien evidement, mais aussi côté serveur.' },
       // <!-- Open Graph data -->
       { property: 'og:title', content: 'Thierry Go Dev' },
@@ -25,7 +25,7 @@ export default {
       { name: 'twitter:description', content: 'Thierry G. développeur d\'application web et mobile. Je suis ce qu\'on appelle un dev full stack JS dans le jargon. En français pour les autres: je programme en JavaScript côté client, bien evidement, mais aussi côté serveur.' },
       { name: 'twitter:creator', content: '@floor_dev' },
       // <!-- Twitter Summary card images must be at least 200x200px -->
-      { name: 'twitter:image', content: 'https://thierry-go-dev/mvicon.png' }
+      { name: 'twitter:image', content: 'https://thierry-go-dev/mvicon.png' } */
     ],
     link: [
       { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
@@ -34,15 +34,12 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],
-
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
   ],
-
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
@@ -63,7 +60,7 @@ export default {
     apiPrefix: '_content',
     dir: 'content',
     fullTextSearchFields: ['title', 'description', 'slug', 'text'],
-    nestedProperties: [],
+    nestedProperties: ['categories.slug'],
     markdown: {
       externalLinks: {},
       footnotes: {

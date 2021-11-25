@@ -2,7 +2,9 @@
   <div>
     <h1>{{ page.title }}</h1>
     <p>{{ page.description }}</p>
-    <img :src="page.img" class="illustration">
+    <figure class="illustration">
+      <img :src="page.img">
+    </figure>
     <nuxt-content :document="page" />
   </div>
 </template>
@@ -10,7 +12,6 @@
 <script>
 export default {
   async asyncData ({ $content, params, error }) {
-    // const slug = params.slug || '/sommaire'
     const page = await $content('articles', params.slug)
       .fetch()
       .catch((err) => {
@@ -31,9 +32,13 @@ export default {
         // Open Graph
         { hid: 'og:title', property: 'og:title', content: this.page.title },
         { hid: 'og:description', property: 'og:description', content: this.page.description },
+        { property: 'og:type', content: 'Web site' },
+        { property: 'og:image', content: this.page.img },
         // Twitter Card
         { hid: 'twitter:title', name: 'twitter:title', content: this.page.title },
-        { hid: 'twitter:description', name: 'twitter:description', content: this.page.description }
+        { hid: 'twitter:description', name: 'twitter:description', content: this.page.description },
+        // Twitter Summary card images must be at least 200x200px
+        { name: 'twitter:image', content: this.page.img }
       ]
     }
   }
@@ -41,24 +46,6 @@ export default {
 </script>
 
 <style>
-nuxt-content {
-  padding: 10%;
-}
-nuxt-link {
-  width: 100%;
-}
-.link__sommaire-article {
-  margin: 1%;
-  font-size: 1.2em;
-  border: 3px solid rgb(241, 241, 186);
-  border-radius: 10px;
-  text-align: center;
-}
-.link__sommaire-article:hover {
-  border: 6px solid rgb(41, 236, 41);
-  box-shadow:4px 4px rgb(5, 134, 16);
-  background-color: rgb(255, 248, 248);
-}
 
 article {
   padding: 5%;
@@ -66,15 +53,38 @@ article {
   width: 100%;
 }
 
+/*pre[class*="language-"] {
+
+}*/
+code {
+  display: block;
+  padding: 2%;
+  width: 90%;
+  margin: auto;
+}
+.filename {
+  display: block;
+  text-align: center;
+  color: rgb(87, 197, 77);
+}
+div.nuxt-content-highlight {
+  background-color: #eaf5e7;
+  display: block;
+  border: 1px solid grey;
+  max-width: 60%;
+  min-width: 55%;
+  margin: 2% auto;
+}
 .vdo {
-  margin: 3%;
-  width: 100%;
+  width: 90%;
+  margin: 0%;
   display: flex;
   justify-content: center;
 }
 iframe {
-  max-width: 100%;
-  max-height: auto;
+  max-width: 75%;
+  min-width: 40%;
+  height: 315px;
 }
 
 .title-blog {
@@ -82,10 +92,21 @@ iframe {
   font-size: 50px;
   text-align: center;
 }
+.illustration {
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  justify-items: center;
+}
+.illustration img {
+  max-width: 60%;
+  border: solid 1px green;
+  margin: auto;
+}
 h1 {
   width: 100%;
   color: #469583;
-  margin: auto;
+  text-align: center;
   border: 2 px solid green;
 }
 h2 {
@@ -96,6 +117,7 @@ h2 {
 p {
   font-family: 'Cutive Mono', monospace;
   margin: 2%;
+  padding: 2%;
   color: #01130f;
 }
 @media screen and (max-width: 850px){
@@ -108,6 +130,14 @@ p {
   }
   .links {
     margin: 2%;
+  }
+  div.nuxt-content-highlight {
+  max-width: 70%;
+  min-width: 65%;
+  }
+  p {
+    font-size: 1.25em;
+
   }
 }
 @media screen and (max-width: 470px) {
@@ -129,7 +159,15 @@ p {
     margin: 1vh;
   }
   p {
-    padding: 1%;
+    padding: 5%;
+  }
+  /*pre[class*="language-"] {
+    max-width: 90%;
+    min-width: 85%;
+  }*/
+  div.nuxt-content-highlight {
+  max-width: 90%;
+  min-width: 85%;
   }
 }
 </style>

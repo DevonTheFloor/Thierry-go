@@ -38,7 +38,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Mon Blog' },
+      { hid: 'description', name: 'description', content: 'Mon Blog de dev full stack JS' },
       // <!-- Open Graph data -->
       { property: 'og:title', content: 'Blog de Dev' },
       { property: 'og:type', content: 'Web site' },
