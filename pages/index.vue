@@ -19,6 +19,7 @@
           <img src="~@/static/node.png" alt="logo Node.js" class="ecusson">
           <img src="~@/static/mongo.png" alt="logo mongodb" class="ecusson">
           <img src="~@/static/vue.png" alt="logo vue js" class="ecusson">
+          <img src="~@/static/v.png" alt="logo vuetify" class="ecusson">
         </figure>
       </div>
 
