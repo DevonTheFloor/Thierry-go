@@ -53,9 +53,6 @@ article {
   width: 100%;
 }
 
-/*pre[class*="language-"] {
-
-}*/
 code {
   display: block;
   padding: 2%;
@@ -108,6 +105,7 @@ h1 {
   color: #469583;
   text-align: center;
   border: 2 px solid green;
+  margin: 1%;
 }
 h2 {
   font-family: 'Dancing Script', cursive;
@@ -117,8 +115,19 @@ h2 {
 p {
   font-family: 'Cutive Mono', monospace;
   margin: 2%;
-  padding: 2%;
+  padding: 1%;
   color: #01130f;
+}
+.illu {
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  justify-items: center;
+}
+.illu img {
+  max-width: 20%;
+  border: solid 1px green;
+  margin: auto;
 }
 @media screen and (max-width: 850px){
   .profile {
@@ -161,10 +170,7 @@ p {
   p {
     padding: 5%;
   }
-  /*pre[class*="language-"] {
-    max-width: 90%;
-    min-width: 85%;
-  }*/
+
   div.nuxt-content-highlight {
   max-width: 90%;
   min-width: 85%;
