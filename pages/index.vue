@@ -122,7 +122,7 @@ Logo {
   border-radius: 45%;
 }
 .ecusson {
-  margin:1vw;
+  margin: 1vw;
 }
 .title {
   font-family:
