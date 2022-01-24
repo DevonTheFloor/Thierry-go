@@ -49,9 +49,3 @@ Tech Talk de Linus Thoravld (créateur de git et de Linux) chez google en 2007:
   <iframe src="https://www.youtube.com/embed/4XpnKHJAok8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<br>
-<br>
-<br>
-<Nav-blog />
-<br>
-<br>

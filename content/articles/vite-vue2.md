@@ -22,11 +22,6 @@ N'hésites pas à lui laisser une étoile sur github !!
 Vue2 à encore quelque années devant lui, alors autant l'utiliser dans les meilleurs conditions possibles.
    
    
-<br>
-<br>
-<br>
-<Nav-blog />
-<br>
-<br>   
+
 
 

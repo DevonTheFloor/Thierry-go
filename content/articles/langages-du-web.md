@@ -24,11 +24,5 @@ Et n'oublie pas de régler le convecteur temporel pour revenir!width="560" heigh
 
 <div class="vdo">
   <iframe src="https://www.youtube.com/embed/bQEHrY4E0IA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-<br>
-<br>
-<br>
-<Nav-blog />
-<br>
-<br>
+</div>   
+   

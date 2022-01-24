@@ -6,6 +6,9 @@
       <img :src="page.img">
     </figure>
     <nuxt-content :document="page" />
+    <br>
+    <Nav-blog />
+    <br>
   </div>
 </template>
 
