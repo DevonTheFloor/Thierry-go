@@ -1,7 +1,7 @@
 ---
 title: Unknow operator $or
 description: Erreur dans mongoDB où l'opérateur $or n'est pas reconnu.
-img:
+img: 'https://thierry-go-dev.fr/tourn/images/blog/or.png'
 ---
 
 ## Definition
@@ -22,7 +22,7 @@ maCollection.find({
    
 
 Alors, que se passe t'il lorsqu'un message d'erreur dans mongoDB te dit que l'opérateur $or est inconnu?   
-D'emblée, ne penses pas qu'il pourrait s'agir d'un problème de version de mongod et que la tienne n'est pas  à jour. Certain opérateur sont apparu au fur et à mesure des nouvelles versions et donc n'existaient pas dans les précédentes.   
+D'emblée, ne penses pas qu'il pourrait s'agir d'un problème de version de mongod et que la tienne n'est pas  à jour. Certains opérateurs sont apparu au fur et à mesure des nouvelles versions et donc n'existaient pas dans les précédentes.   
 Mais ce n'est pas le cas de $or.   
    
 
@@ -33,8 +33,9 @@ monObjet.maFonction() is not a function
    Ta requête est tout simplement mal écrite.   
 Détails importants à respecter sous peine d'erreur: les expressions sont dans un tableau.   
 L'opérateur ouvre avec deux points (":").   
-Et enfin, il ne se trouve au premier niveau de la requête car c'est un critère supplémentaire.   
+Et enfin, il se trouve au premier niveau de la requête car c'est un critère supplémentaire.   
    
+      
    ```js{}[exemple]
    maCollection.find({
       { requete-de-base},

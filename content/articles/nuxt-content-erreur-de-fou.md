@@ -33,17 +33,12 @@ Tu peux retourner la situation dans tous les sens y a rien qu’est mal fait , s
    
 Je ne sais pas comment VSCode est organisé en interne, mais visiblement lorsque tu créer un dossier dans un autre alors que celui ci est vide, ça ne donne pas le même chemin que si il y avait un fichier dedans (le fichier cale.md dans l’image).   
 
-<figure class="illu"><img src="https://thierry-go-dev.fr/tourn/images/blog/illu/cale2.png"></figure>
+<figure class="illu"><img src="https://thierry-go-dev.fr/tourn/images/blog/illu/cale2.png"></figure>   
+
 Parce que là (attention spoileur!) ça marche !!!   
 C’était un fichu problème de chemin qui ne devrait pas exister (le problème pas le chemin)! Comment ça se fait que j’ai pas le même chemin si je mets un dossier dans un dossier vide ou non ? Enfin bref, tout ça pour ça.   
    
 Mais on a quand même frisouiller la skyzo: tout est nickel, tout fonctionne , mais pas de données dans la réponse!   
    
-<br>
-<br>
-<br>
-<Nav-blog />
-<br>
-<br> 
 
 

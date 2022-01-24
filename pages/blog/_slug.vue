@@ -99,7 +99,7 @@ iframe {
   justify-items: center;
 }
 .illustration img {
-  max-width: 60%;
+  max-width: 50%;
   border: solid 1px green;
   margin: auto;
 }

@@ -5,7 +5,14 @@
       <li v-for="article in sommaire" :key="article.id" class="link__sommaire-article">
         <div class="print">
           <h2>{{ article.title }}</h2>
-          <p> {{ article.description }} </p>
+          <div id="mef">
+            <div id="textmini">
+              <p> {{ article.description }} </p>
+            </div>
+            <div id="imagemini">
+              <img :src="article.img">
+            </div>
+          </div>
           <nuxt-link :to="`/blog/${article.slug}`" class="btn-custom button--green">
             Lire
           </nuxt-link>
@@ -29,7 +36,7 @@
 <script>
 export default {
   async asyncData ({ $content, error }) {
-    const sommaire = await $content('articles').only(['title', 'description', 'slug'])
+    const sommaire = await $content('articles').only(['title', 'description', 'img', 'slug'])
       .fetch()
       .catch((err) => {
         // eslint-disable-next-line no-console
@@ -76,7 +83,9 @@ h1 {
   text-align: center;
   margin: 1%;
 }
-
+h2 {
+  font-size: 2.5em;
+}
 li {
   list-style: none;
   margin: 3%;
@@ -86,10 +95,28 @@ ul {
   padding: 0px;
   margin: 3%;
 }
-
-.print {
-  justify-content: center;
+img {
+  width: 70%;
+  margin: auto;
 }
+#mef {
+  padding: 1%;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: space-around;
+}
+#imagemini {
+  width: 35%;
+}
+#textmini {
+  width: 65%;
+}
+.print {
+  justify-items: center;
+}
+
 .link__sommaire-article {
   margin: 1%;
   font-size: 1.2em;
@@ -147,6 +174,21 @@ p {
   color: #01130f;
 }
 @media screen and (max-width: 850px){
+  img {
+    width: 50%;
+  }
+  #mef {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  #textmini {
+    width: 95%;
+  }
+  #imagemini {
+    width: 95%;
+  }
   .profile {
     min-width: 12vw;
   }
@@ -178,6 +220,9 @@ p {
   }
   p {
     padding: 1%;
+  }
+  h2 {
+    font-size: 1.5em;
   }
 }
 </style>
