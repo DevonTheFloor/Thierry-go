@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="bann__article">
     <img :src="urlim" class="bann">
     <h1 class="bann__titre">
       <slot name="titre"></slot>
@@ -21,7 +21,6 @@ export default {
 <style>
 header {
   border: 20px ridge rgb(12, 77, 12);
-  height: 500px;
 }
 .bann {
   width: 100%;
@@ -29,6 +28,9 @@ header {
   object-fit: fill;
   position: relative;
   opacity: 0.8;
+}
+.bann__article {
+  height: 500px;
 }
 .bann__titre {
   z-index: 1;
