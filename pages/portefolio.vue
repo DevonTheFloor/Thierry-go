@@ -6,7 +6,9 @@
       </template>
     </MyHeader>
     <main>
-      <h2>Nul n'Est Censé Ignorer La Loi</h2>
+      <h2 class="h2__folio">
+        Nul n'Est Censé Ignorer La Loi
+      </h2>
       <p>Site de la chaîne youtube du même nom. Chaîne de vulgarisation et diffusion du droit. Réalisé en Nuxt et Vuetify, le blog est en @nuxt/content.</p>
       <figure class="framebox">
         <a href="https://nulnestcenseignorerlaloi.fr" target="_blank">
@@ -16,7 +18,9 @@
           >
         </a>
       </figure>
-      <h2>Pièce De Recup'</h2>
+      <h2 class="h2__folio">
+        Pièce De Recup'
+      </h2>
       <p>Site de vente de petites annonces de pièces de récupérations pour les bricoleurs. Projet réalisé en webcoponents et modules ES6 natifs. Base MongoDB et hébergement sur VPS servi par Node. </p>
       <figure class="framebox">
         <a href="https://piecederecup.fr" target="_blank">
@@ -26,7 +30,9 @@
           >
         </a>
       </figure>
-      <h2>My Veille Dev Web</h2>
+      <h2 class="h2__folio">
+        My Veille Dev Web
+      </h2>
       <p>
         Projet de fin d'étude motivé par la difficulté de trouver une source de veille technologique exclusivement orientée dev web. Mais surtout, enfin avoir la possibilité de mettre de côté les articles qu'on ne peut pas lire tout de suite dans un espace perso accesible via une connexion Oauth2 via guithub.<br>
       </p>
@@ -104,7 +110,7 @@ main {
   display: flex;
   justify-content: center;
 }
-h2 {
+.h2__folio {
   text-align: center;
   color: rgb(23, 180, 23);
   font-size: 2em;
