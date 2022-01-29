@@ -1,10 +1,14 @@
 <template>
   <div>
-    <h1>{{ page.title }}</h1>
+    <MyHeader :urlim="page.img">
+      <template #titre>
+        {{ page.title }}
+      </template>
+    </MyHeader>
     <p>{{ page.description }}</p>
-    <figure class="illustration">
+    <!-- <figure class="illustration">
       <img :src="page.img">
-    </figure>
+    </figure>-->
     <nuxt-content :document="page" />
     <br>
     <Nav-blog />

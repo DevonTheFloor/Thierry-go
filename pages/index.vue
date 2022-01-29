@@ -47,6 +47,16 @@
           Nuxt.Js
         </a>
       </div>
+      <p>Bien entendu tu peux regarder  mes productions, qui ont la particularité de ne pas être juste des sites de démonstration, mais de vrais projets poussés en poduction.</p>
+      <div class="links">
+        <nuxt-link
+          to="/portefolio"
+          rel="noopener noreferrer"
+          class="btn-custom button--green"
+        >
+          Portefolio
+        </nuxt-link>
+      </div>
       <p>Si tu es développeur et que tu entretiens une veille technologique ou si simplement tu t'interesses à l'actualité du net et des nouvelles technologies de l'information, je peux te conseiller :</p>
       <div class="links">
         <a
@@ -68,6 +78,7 @@
 
 <script>
 export default {
+
   head () {
     return {
       title: 'Thierry-go-Dev',

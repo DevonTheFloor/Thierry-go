@@ -28,14 +28,7 @@ Je parle de ce petit problème dans cet article: <nuxt-link to="./vite-vue2">Vit
    
 Par conte l'honnêteté m'oblige à te dire, que je n'ai pas encore tester le build en prod, affaire à suivre donc, mais vue les pricipe utilisé dans cet outils, il ne devrait pas trop y avoir de problème. De toutes façons on reparle très... Vite! biensûr !   
    
-<img src=''>   
    
-   
-<br>
-<br>
-<Nav-blog />
-<br>
-<br>   
    
 
    
