@@ -7,7 +7,6 @@
 <style>
 html {
   background-color: #469583;
-  margin: 1vw;
   padding: 1vw;
   font-family:
     'Source Sans Pro',

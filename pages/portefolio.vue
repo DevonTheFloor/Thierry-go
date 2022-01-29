@@ -6,6 +6,20 @@
       </template>
     </MyHeader>
     <main>
+      <p>
+        Sans non plus évoquer tous les projets réaliser pour l'obtention de mon titre professionnel, disponible sur mon <a
+          href="https://github.com/DevonTheFloor"
+          target="_blank"
+          class="btn-custom button--green"
+        >github</a> et dont je peux citer: <br>
+        <ul>
+          <li><a href="https://github.com/DevonTheFloor/Gpm-CLI" class="link">Groupomania with VueCLI</a></li>
+          <li><a href="https://github.com/DevonTheFloor/avder">API d'avis gastronomique</a></li>
+          <li><a href="https://github.com/DevonTheFloor/compressor">API de compression d'image</a></li>
+        </ul>
+        Je vous presente mes réalisations qui sont aujourd'hui en prod.
+      </p>
+      <br><br>
       <h2 class="h2__folio">
         Nul n'Est Censé Ignorer La Loi
       </h2>
@@ -40,6 +54,18 @@
         <a href="https://myveille.herokuapp.com" target="_blank">
           <img
             src="https://thierry-go-dev.fr/tourn/images/veillescreen.png"
+            class="imframe"
+          >
+        </a>
+      </figure>
+      <h2 class="h2__folio">
+        Audit SEO
+      </h2>
+      <p>Pour le compte d'une spychotherapeute. Travail sur le référencement naturelle , optimisation sémantique des textes, compression/redimensionnement des images, optimisation des menus.</p>
+      <figure class="framebox">
+        <a href="https://www.chemindegestalt.fr/" target="_blank">
+          <img
+            src="https://thierry-go-dev.fr/tourn/images/chemin.png"
             class="imframe"
           >
         </a>

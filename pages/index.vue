@@ -1,15 +1,15 @@
 <template>
-  <div class="container">
-    <div>
+  <div class="container-fluid">
+    <header>
       <Logo />
-      <h1 class="title">
+      <h1>
         Thierry Go Dev
         <figure>
           <img class="profile" src="~static/profil.jpg">
         </figure>
       </h1>
       <h2 class="sub-title">
-        Développeur d'application web et mobile, full stack JS.
+        <strong>Développeur d'application web et mobile, full stack JS.</strong>
       </h2>
       <div>
         <figure>
@@ -22,54 +22,53 @@
           <img src="~@/static/v.png" alt="logo vuetify" class="ecusson">
         </figure>
       </div>
-
-      <p>
-        Site en construction, en attendant il y a peut être des articles dans le blog?
-      </p>
-      <div class="links">
-        <a
-          href="https://github.com/DevonTheFloor"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn-custom button--grey"
-        >
-          Mon GitHub
-        </a>
-        <nuxt-link to="blog/sommaire" class="btn-custom button--green">
-          Sommaire Blog
-        </nuxt-link>
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn-custom button--green"
-        >
-          Nuxt.Js
-        </a>
-      </div>
-      <p>Bien entendu tu peux regarder  mes productions, qui ont la particularité de ne pas être juste des sites de démonstration, mais de vrais projets poussés en poduction.</p>
-      <div class="links">
-        <nuxt-link
-          to="/portefolio"
-          rel="noopener noreferrer"
-          class="btn-custom button--green"
-        >
-          Portefolio
-        </nuxt-link>
-      </div>
-      <p>Si tu es développeur et que tu entretiens une veille technologique ou si simplement tu t'interesses à l'actualité du net et des nouvelles technologies de l'information, je peux te conseiller :</p>
-      <div class="links">
-        <a
-          href="https://myveille.herokuapp.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn-custom button--green"
-        >
-          My Veille
-        </a>
-      </div>
-      <p>Veille axée exclusivement sur le développement web. C'est ti pas beau la vie?</p>
+    </header>
+    <p>
+      Site en construction, en attendant il y a peut être des articles dans le blog?
+    </p>
+    <div class="links">
+      <a
+        href="https://github.com/DevonTheFloor"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-custom button--grey"
+      >
+        Mon GitHub
+      </a>
+      <nuxt-link to="blog/sommaire" class="btn-custom button--green">
+        Sommaire Blog
+      </nuxt-link>
+      <a
+        href="https://nuxtjs.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-custom button--green"
+      >
+        Nuxt.Js
+      </a>
     </div>
+    <p>Bien entendu tu peux regarder  mes productions, qui ont la particularité de ne pas être juste des sites de démonstration, mais de vrais projets poussés en poduction.</p>
+    <div class="links">
+      <nuxt-link
+        to="/portefolio"
+        rel="noopener noreferrer"
+        class="btn-custom button--green"
+      >
+        Portefolio
+      </nuxt-link>
+    </div>
+    <p>Si tu es développeur et que tu entretiens une veille technologique ou si simplement tu t'interesses à l'actualité du net et des nouvelles technologies de l'information, je peux te conseiller :</p>
+    <div class="links">
+      <a
+        href="https://myveille.herokuapp.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-custom button--green"
+      >
+        My Veille
+      </a>
+    </div>
+    <p>Veille axée exclusivement sur le développement web. C'est ti pas beau la vie?</p>
     <br>
     <br>
     <br>
@@ -116,11 +115,25 @@ export default {
 </script>
 
 <style>
-
-.container {
+header {
+  min-width: 100%;
+  border: 20px ridge rgb(12, 77, 12);
+  background-image: url('https://thierry-go-dev.fr/tourn/images/voyage.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 5%;
+}
+header h1 {
+  color: rgb(62, 255, 4);
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+  font-size: 6em;
+}
+.container-fluid {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -156,9 +169,9 @@ Logo {
 .sub-title {
   font-weight: 200;
   font-size: 35px;
-  color: #43516e;
-  word-spacing: 2px;
-  padding-bottom: 15px;
+  color: rgb(61, 255, 13);
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
 }
 
 .links {
