@@ -50,11 +50,11 @@
     <p>Bien entendu tu peux regarder  mes productions, qui ont la particularité de ne pas être juste des sites de démonstration, mais de vrais projets poussés en poduction.</p>
     <div class="links">
       <nuxt-link
-        to="/portefolio"
+        to="/portfolio"
         rel="noopener noreferrer"
         class="btn-custom button--green"
       >
-        Portefolio
+        Portfolio
       </nuxt-link>
     </div>
     <p>Si tu es développeur et que tu entretiens une veille technologique ou si simplement tu t'interesses à l'actualité du net et des nouvelles technologies de l'information, je peux te conseiller :</p>
@@ -124,7 +124,7 @@ header {
   margin-bottom: 5%;
 }
 header h1 {
-  color: rgb(62, 255, 4);
+  color: rgb(59, 189, 20);
   text-align: center;
   text-shadow: 2px 2px 2px black;
   font-size: 6em;
