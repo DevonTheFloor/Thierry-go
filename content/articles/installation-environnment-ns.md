@@ -1,5 +1,5 @@
 ---
-title: Installation de l'environnement de développement de nativScript.
+title: Installation de l'environnement nativScript.
 description: Toutes les commandes pour installer l'environnement nativeScript. Le framework pour developper des applications mobiles avec les langages du web. En JS natif ou avec Vue, Angular ou React.
 img: 'https://thierry-go-dev.fr/tourn/images/blog/natiangu.png'
 ---
@@ -28,7 +28,7 @@ sudo apt install openjdk-17-jre-headless
 Installe enfin androidStudio, dispo aussi des les dépots ou sur le site d'android [ici](https://developer.android.com/studio?gclid=EAIaIQobChMIj7a5wKif9QIVFdxRCh39Hge_EAAYASAAEgKeuPD_BwE&gclsrc=aw.ds) .   
 Dans le .bashrc du compte courant, rajoute:   
 export ANDROID_HOME=$HOME/Android/Sdk   
-export PATH=$PATH:ANDROID_HOME/platform-tool   
+export PATH=$PATH:$ANDROID_HOME/platform-tools   
    
 Et enfin, install nativscript en global:
 ```

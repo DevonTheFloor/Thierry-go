@@ -21,7 +21,7 @@ maCollection.find({
 ## Explications   
    
 
-Alors, que se passe t'il lorsqu'un message d'erreur dans mongoDB te dit que l'opérateur $or est inconnu?   
+Alors, que ce passe t'il lorsqu'un message d'erreur dans mongoDB te dit que l'opérateur $or est inconnu?   
 D'emblée, ne penses pas qu'il pourrait s'agir d'un problème de version de mongod et que la tienne n'est pas  à jour. Certains opérateurs sont apparu au fur et à mesure des nouvelles versions et donc n'existaient pas dans les précédentes.   
 Mais ce n'est pas le cas de $or.   
    

@@ -7,7 +7,7 @@ img: 'https://thierry-go-dev.fr/tourn/images/blog/viteVue.png'
    
 Je ne reviens ce qu'est Vite, j'en ai parlé [ici](/blog/article/vite-js).   
 Mais il faut qu'on parle de l'incompatibilité de Vite avec Vue2. Même si Vue2 est encore très largement utilisé plus d'un an après la sortie de Vue3, Evan n'a pas prévu initialement de le faire fonctionner avec Vite.   
-Mais ne t'inquiète pas petit padawan, un mebre du core team de Vue s'est attelé à la tâche. Il a créer un plugin pour intégrer vue2 dans Vite.   Je te mets ici le lien vers lapage npm du dépot:   
+Mais ne t'inquiète pas petit padawan, un membre du core team de Vue s'est attelé à la tâche. Il a créer un plugin pour intégrer vue2 dans Vite.   Je te mets ici le lien vers la page npm du dépot:   
    
    
 [Plugin vite+Vue2](https://www.npmjs.com/package/vite-plugin-vue2)   

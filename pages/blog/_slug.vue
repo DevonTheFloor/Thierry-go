@@ -182,5 +182,8 @@ p {
   max-width: 90%;
   min-width: 85%;
   }
+  h1 {
+    font-size: 2em;
+  }
 }
 </style>
