@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid">
-    <header>
+    <header id="indexhead">
       <Logo />
       <h1>
         Thierry Go Dev
@@ -39,7 +39,7 @@
       </a>
     </div>
     <p>
-      Ses multiples formats de build pour la mise en prod offre des perspectives de developpement qu'on ne trouve pas ailleurs. Et avec eux Vuetify pour le CSS.<br> At last, mais pas des moindre, je m'adonne aussi avec plaisir au développement d'application mobile avec nativeScript pour Android et IOs.
+      Ses multiples formats de build pour la mise en prod offre des perspectives de developpement qu'on ne trouve pas ailleurs. Et avec eux Vuetify pour le CSS.<br>Maintenant avec l'arrivé de <nuxt-link to="/blog/vite-js">Vite.js</nuxt-link> (dont je suis super fan, tu verras) le developpement front-end devient encoreplus passionnant.<br> At last, mais pas des moindre, je m'adonne aussi avec plaisir au développement d'application mobile avec nativeScript pour Android et IOs.
     </p>
     <p>
       Tu peux retrouver ici mon Github.
@@ -121,7 +121,7 @@ export default {
 </script>
 
 <style>
-header {
+#indexhead {
   min-width: 100%;
   border: 20px ridge rgb(12, 77, 12);
   background-image: url('~@/static/bann/boikourXL.jpg');
