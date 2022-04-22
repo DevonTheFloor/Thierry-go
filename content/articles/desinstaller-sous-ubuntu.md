@@ -13,7 +13,7 @@ dpkg --list |grep <nom-du-paquet>
 ```   
 
 Ainsi trouver le nom exacte du paquet en suivant les propositions si on n'a pas le bon nom.   
-Ensuite on peut soit le remove, soit le purge. Le remove garde les fichiers de configuaration, ce qui peut poser des problèmes quand il y a des differences majeur entre les versions de paquet. Et purge efface tous et donc évite toutes sortes de problèmes de type conflit de version de dépendance.   
+Ensuite on peut soit le remove, soit le purge. Le remove garde les fichiers de configuaration, ce qui peut poser des problèmes quand il y a des différences majeur entre les versions de paquet. Et purge efface tout et donc évite toutes sortes de problèmes de type conflit de version de dépendance.   
    
 donc
 ```bash

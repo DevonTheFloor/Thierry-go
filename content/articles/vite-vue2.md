@@ -1,13 +1,13 @@
 ---
 title: Vite.js + Vue2
-description: On revient sur Vite.js, le nouvel environnement de développement créé par Evan You, l'inventeur der Vue.js, car il impose Vue3 et ne fonctionne pas avec Vue2, c'est balo.
+description: On revient sur Vite.js, le nouvel environnement de développement créé par Evan You, l'inventeur de Vue.js, car il impose Vue3 et ne fonctionne pas avec Vue2, c'est balo.
 img: 'https://thierry-go-dev.fr/tourn/images/blog/viteVue.png'
 ---
    
    
-Je ne reviens ce qu'est Vite, j'en ai parlé [ici](/blog/article/vite-js).   
+Je ne reviens pas sur ce qu'est Vite, j'en ai parlé [ici](/blog/article/vite-js).   
 Mais il faut qu'on parle de l'incompatibilité de Vite avec Vue2. Même si Vue2 est encore très largement utilisé plus d'un an après la sortie de Vue3, Evan n'a pas prévu initialement de le faire fonctionner avec Vite.   
-Mais ne t'inquiète pas petit padawan, un membre du core team de Vue s'est attelé à la tâche. Il a créer un plugin pour intégrer vue2 dans Vite.   Je te mets ici le lien vers la page npm du dépot:   
+Mais ne t'inquiètes pas petit padawan, un membre du core team de Vue s'est attelé à la tâche. Il a créé un plugin pour intégrer vue2 dans Vite.   Je te mets ici le lien vers la page npm du dépot:   
    
    
 [Plugin vite+Vue2](https://www.npmjs.com/package/vite-plugin-vue2)   

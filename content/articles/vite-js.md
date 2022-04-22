@@ -7,7 +7,7 @@ img: 'https://thierry-go-dev.fr/tourn/images/blog/viteJs.png'
    
 ## La problématique   
    
-Vite.js arrive à un moment ou la taille des applications [front-end](/lexique) est telle que les bundler classiques comme web-pack en sont sérieusement ralenti et cela commence à affecter la qualité de travail.   
+Vite.js arrive à un moment ou la taille des applications [front-end](/lexique) est telle que les bundlers classiques comme web-pack en sont sérieusement ralenti et cela commence à affecter la qualité de travail.   
 Ce ralentissement se recent aussi dans le serveur de développement qui est obligé d'attendre que toute l'appli soit "re-bundlé" avant d'être reservit à chaque modification du code. Et ce, même avec un module de rechargement à chaud (Hot Module Reload) qui n'a servit , finalement, qu'a retarder l'inévitable.   
    
 Vite s'appuie sur la faculté, désormais native, du navigateur à gérer lui-même les mudules ESM et par là même, les import/export ES6.   
@@ -26,7 +26,8 @@ Enfin et j'ai presque envie de dire : surtout (mais en fait non, tout est trop g
 Par contre là ou le bas blaisse, c'est que Vite ne fonctionne pas avec Vue2 (oh magoche!!). Du moins pas sans le plugin adéquat.   
 Je parle de ce petit problème dans cet article: <nuxt-link to="./vite-vue2">Vite+Vue2</nuxt-link>.   
    
-Par conte l'honnêteté m'oblige à te dire, que je n'ai pas encore tester le build en prod, affaire à suivre donc, mais vue les pricipes utilisés dans cet outil, il ne devrait pas trop y avoir de problème. De toutes façons on en reparle très... Vite! biensûr !   
+Par contre l'honnêteté m'oblige à te dire, que je n'ai pas encore tester le build en prod, affaire à suivre donc, mais vue les pricipes utilisés dans cet outil, il ne devrait pas trop y avoir de problème. De toutes façons on en reparle très... Vite! biensûr !   
+
    
    
    

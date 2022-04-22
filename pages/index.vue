@@ -26,7 +26,7 @@
       </div>
     </header>
     <p>
-      Développeur full stack d'applications web mon stack est 100% JavaScript. Node.js bien entendu en back, mocha pour les tests. Je suis aussi de très prêt l'évolution de Deno et m'interesse au serveur web à base de Rust.<br> Même si MongoDB est ma base de données de prédilection, il est bien evidemment impossible de ne pas utiliser SQL.<br>Enfin en front, où je ne suis pas en reste, je suis diciple de Vue.js et de son meta framework Français: Nuxt.js!
+      Développeur full stack d'applications web mon stack est 100% JavaScript. Node.js bien entendu en back, mocha pour les tests. Je suis aussi de très prêt l'évolution de Deno et m'interesse au serveur web à base de Rust.<br> Même si MongoDB est ma base de données de prédilection, il est, bien evidemment, impossible de ne pas utiliser SQL.<br>Enfin en front, où je ne suis pas en reste, je suis disciple de Vue.js et de son meta framework Français: Nuxt.js!
     </p>
     <div class="links">
       <a
@@ -39,7 +39,7 @@
       </a>
     </div>
     <p>
-      Ses multiples formats de build pour la mise en prod offre des perspectives de developpement qu'on ne trouve pas ailleurs. Et avec eux Vuetify pour le CSS.<br>Maintenant avec l'arrivé de <nuxt-link to="/blog/vite-js">Vite.js</nuxt-link> (dont je suis super fan, tu verras) le developpement front-end devient encoreplus passionnant.<br> At last, mais pas des moindre, je m'adonne aussi avec plaisir au développement d'application mobile avec nativeScript pour Android et IOs.
+      Ses multiples formats de build pour la mise en prod offrent des perspectives de developpement qu'on ne trouve pas ailleurs. Et avec eux, Vuetify pour le CSS.<br>Maintenant avec l'arrivé de <nuxt-link to="/blog/vite-js">Vite.js</nuxt-link> (dont je suis super fan, tu verras) le developpement front-end devient encoreplus passionnant.<br> At last, mais pas des moindres, je m'adonne aussi avec plaisir au développement d'application mobile avec nativeScript pour Android et IOs.
     </p>
     <p>
       Tu peux retrouver ici mon Github.
@@ -66,12 +66,12 @@
           My Veille
         </a>
       </div>
-      <p>Un développeur qui cause de developpement, bah ça cause beaucoup! Entre les derniers outils de développement, un point sur un détail technique ou l'actu générale du web, on a toujours un truc à raconter. Alors forcement y a moment ou ça fini en blog!</p>
+      <p>Un développeur qui cause de developpement, bah ça cause beaucoup! Entre les derniers outils de développement, un point sur un détail technique ou l'actu générale du web, on a toujours un truc à raconter. Alors forcement y a moment où ça fini en blog!</p>
       <nuxt-link to="blog/sommaire" class="btn-custom button--green">
         Sommaire Blog
       </nuxt-link>
     </div>
-    <p>Bien entendu tu peux regarder  mes productions, qui ont la particularité de ne pas être juste des sites de démonstration, mais de vrais projets poussés en poduction.</p>
+    <p>Bien entendu, tu peux regarder  mes productions, qui ont la particularité de ne pas être juste des sites de démonstration, mais de vrais projets poussés en poduction.</p>
     <div class="links">
       <nuxt-link
         to="/portfolio"
