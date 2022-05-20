@@ -11,12 +11,14 @@
     </figure>-->
     <nuxt-content :document="page" />
     <br>
+    <p> Views: {{ view }} </p>
     <Nav-blog />
     <br>
   </div>
 </template>
 
 <script>
+
 export default {
   async asyncData ({ $content, params, error }) {
     const page = await $content('articles', params.slug)
@@ -48,6 +50,15 @@ export default {
         { name: 'twitter:image', content: this.page.img }
       ]
     }
+  },
+  async getNbView () {
+    await fetch('https://piecederecup.fr/myapis/countersview' + this.page.title)
+      .then(res => console.log('status text:', res))
+      .then((view) => {
+        console.log('returning :', view)
+        return view
+      })
+      .catch(error => console.error(error))
   }
 }
 </script>

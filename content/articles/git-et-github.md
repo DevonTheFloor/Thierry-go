@@ -6,8 +6,7 @@ img: https://thierry-go-dev.fr/tourn/images/blog/gitetgithub.jpg
 
 ## Git   
    
-Beaucoup trop de gens et parmis eux des professionnels aguerri, définissent Git comme étant un logiciel de versionning, en bon franglais. C'est un racourcit aussi court que simpliste.   
-
+Beaucoup trop de gens et parmis eux des professionnels aguerris, définissent Git comme étant un logiciel de versionning, en bon franglais. C'est un racourcit aussi court que simpliste.   
 Dans le monde du développement logiciel, que ce soit des applications natives, des exécutables de  bureau ou des applications web, il n’est pas rare de ne pas trop savoir où l’on va. L’idée de base est très souvent sommaire et évolue en fonction de tout un tas de chose : la compréhension des désidératas du client, la finalité commerciale du produit, mais aussi et surtout, en fonction des dead lines.   
 
 Quand il faut 6 mois pour développer un truc, et qu’on se rend compte qu’au 4e on n’en a pas fait la moitié… Les objectifs sont revus. On va abandonner telle fonctionnalité, on va simplifier telle interface, etc...   
