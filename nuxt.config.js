@@ -37,9 +37,17 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
     '@nuxt/content'
   ],
+  axios: {
+    proxy: true // Can be also an object with default options
+  },
+
+  proxy: {
+    '/counter/': 'https://piecederecup.fr/myapis/countersview/'
+  },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {

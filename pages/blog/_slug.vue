@@ -11,7 +11,7 @@
     </figure>-->
     <nuxt-content :document="page" />
     <br>
-    <p> Views: {{ view }} </p>
+    <p> Views: {{ views }} </p>
     <Nav-blog />
     <br>
   </div>
@@ -33,6 +33,12 @@ export default {
       page
     }
   },
+  data () {
+    return {
+      views: null
+    }
+  },
+
   head () {
     return {
       title: this.page.title,
@@ -51,14 +57,11 @@ export default {
       ]
     }
   },
-  async getNbView () {
-    await fetch('https://piecederecup.fr/myapis/countersview' + this.page.title)
-      .then(res => console.log('status text:', res))
-      .then((view) => {
-        console.log('returning :', view)
-        return view
-      })
-      .catch(error => console.error(error))
+  mounted () {
+    const views = this.$axios.$get('/counter/')
+    this.views = views
+    // eslint-disable-next-line no-console
+    // console.log('views :', views)
   }
 }
 </script>
