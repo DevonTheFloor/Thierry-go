@@ -1,0 +1,57 @@
+ReferenceError: document is not defined
+ ❯ js/module-liste/index.js:3:15
+      1| import { dGEBId, dCrEl } from "../modules/dom-helpers.js";
+      2| 
+      3| const mount = document.getElementById('mount-alert'),
+       |               ^
+      4|   body = document.querySelector('body'),
+      5|   numt = [1,2,3,4,5],
+ ❯ js/module-liste/__test__/indexTest.spec.js:2:31
+
+
+https://vitest.dev/config/#environment
+
+solution: // @vitest-environment happy-dom
+
+suite:
+
+TypeError: Cannot set properties of null (setting 'innerHTML')
+ ❯ Module.closed js/module-liste/index.js:106:19
+    104| export function closed () {
+    105|   const mount = document.getElementById('mount-alert');
+    106|   mount.innerHTML = '';
+       |                   ^
+    107|   body.removeAttribute('style');
+    108| }
+ ❯ js/module-liste/__test__/indexTest.spec.js:16:20
+
+resolve:
+beforeEach(()=> {
+  const document = window.document;
+  const mounting = document.createElement('div');
+  mounting.id = 'mount-alert';
+  document.body.appendChild(mounting);
+})
+
+nouvelle erreur: 
+TypeError: Cannot read properties of null (reading 'innerHTML')
+ ❯ js/module-liste/__test__/indexTest.spec.js:26:50
+     24|     
+     25|     // Vérifier que la propriété innerHTML de #mount-alert a été défin…
+     26|     expect(document.getElementById('mount-alert').innerHTML).toBe('');
+       |                                                  ^
+success:
+let document;
+let mountAlertElement;
+
+beforeEach(()=> {
+  document = window.document;
+  const mounting = document.createElement('div');
+  mounting.id = 'mount-alert';
+  document.body.appendChild(mounting);
+  mountAlertElement = document.getElementById("mount-alert");
+})
+Dans votre code, la variable mountAlertElement est définie à l'extérieur de vos tests, et elle est initialisée lors de l'exécution du beforeEach(). Lorsque vous définissez const mountAlertElement = document.getElementById("mount-alert"); à l'extérieur des tests, cette ligne est exécutée avant que le beforeEach() ne soit exécuté, ce qui signifie que l'élément avec l'id "mount-alert" n'a pas encore été créé et ajouté au document.
+
+Ensuite, dans vos tests, vous vérifiez d'abord si mountAlertElement est défini avec expect(mountAlertElement).toBeDefined();, ce qui va réussir car la variable existe, mais elle sera null car l'élément n'a pas encore été créé.
+
