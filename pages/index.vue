@@ -81,9 +81,6 @@
         Portfolio
       </nuxt-link>
     </div>
-    <br>
-    <br>
-    <br>
   </div>
 </template>
 
@@ -123,7 +120,7 @@ export default {
 <style>
 #indexhead {
   min-width: 100%;
-  border: 20px ridge rgb(12, 77, 12);
+  border: 2px ridge rgb(12, 77, 12);
   background-image: url('~@/static/bann/boikourXL.jpg');
   background-repeat: no-repeat;
   background-size: cover;

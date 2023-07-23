@@ -79,10 +79,7 @@ export default {
 </script>
 
 <style scoped>
-h1 {
-  text-align: center;
-  margin: 1%;
-}
+
 h2 {
   font-size: 2.5em;
 }
@@ -120,7 +117,7 @@ img {
 .link__sommaire-article {
   margin: 1%;
   font-size: 1.2em;
-  border: 3px solid rgb(241, 241, 186);
+  border: 6px solid rgb(237, 232, 232);
   border-radius: 10px;
   text-align: center;
 }
@@ -158,10 +155,10 @@ iframe {
   text-align: center;
 }
 h1 {
+  text-align: center;
+  margin: 1%;
   width: 100%;
   color: #469583;
-  margin: auto;
-  border: 2 px solid green;
 }
 h2 {
   font-family: 'Dancing Script', cursive;
@@ -170,7 +167,7 @@ h2 {
 }
 p {
   font-family: 'Cutive Mono', monospace;
-  margin: 2%;
+  margin: 1%;
   color: #01130f;
 }
 @media screen and (max-width: 850px){
