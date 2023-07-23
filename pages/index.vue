@@ -1,15 +1,15 @@
 <template>
-  <div class="container">
-    <div>
+  <div class="container-fluid">
+    <header id="indexhead">
       <Logo />
-      <h1 class="title">
+      <h1>
         Thierry Go Dev
         <figure>
           <img class="profile" src="~static/profil.jpg">
         </figure>
       </h1>
       <h2 class="sub-title">
-        Développeur d'application web et mobile, full stack JS.
+        <strong>Développeur d'application web et mobile, full stack JS.</strong>
       </h2>
       <div>
         <figure>
@@ -19,34 +19,43 @@
           <img src="~@/static/node.png" alt="logo Node.js" class="ecusson">
           <img src="~@/static/mongo.png" alt="logo mongodb" class="ecusson">
           <img src="~@/static/vue.png" alt="logo vue js" class="ecusson">
+          <img src="~@/static/v.png" alt="logo vuetify" class="ecusson">
+          <img src="~@/static/nativ.png" alt="logo nativScript" class="ecusson">
+          <img src="~@/static/nuxtjs3.png" alt="logo nuxt3" class="ecusson">
         </figure>
       </div>
-
+    </header>
+    <p>
+      Développeur full stack d'applications web mon stack est 100% JavaScript. Node.js bien entendu en back, mocha pour les tests. Je suis aussi de très prêt l'évolution de Deno et m'interesse au serveur web à base de Rust.<br> Même si MongoDB est ma base de données de prédilection, il est, bien evidemment, impossible de ne pas utiliser SQL.<br>Enfin en front, où je ne suis pas en reste, je suis disciple de Vue.js et de son meta framework Français: Nuxt.js!
+    </p>
+    <div class="links">
+      <a
+        href="https://nuxtjs.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-custom button--green"
+      >
+        Nuxt.Js
+      </a>
+    </div>
+    <p>
+      Ses multiples formats de build pour la mise en prod offrent des perspectives de developpement qu'on ne trouve pas ailleurs. Et avec eux, Vuetify pour le CSS.<br>Maintenant avec l'arrivé de <nuxt-link to="/blog/vite-js">Vite.js</nuxt-link> (dont je suis super fan, tu verras) le developpement front-end devient encoreplus passionnant.<br> At last, mais pas des moindres, je m'adonne aussi avec plaisir au développement d'application mobile avec nativeScript pour Android et IOs.
+    </p>
+    <p>
+      Tu peux retrouver ici mon Github.
+    </p>
+    <div class="links">
+      <a
+        href="https://github.com/DevonTheFloor"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-custom button--grey"
+      >
+        Mon GitHub
+      </a>
       <p>
-        Site en construction, en attendant il y a peut être des articles dans le blog?
+        C'est non sans une certaine satisfaction que je te propose de visiter My Veille, qui comme son nom l'indique, est mon application web dediée à la veille technologique dans le domaine du développement web. Débuté comme projet de fin d'étude, je peux t'assurer que je vais porter le projet aussi loin et longtemps que je le pourrai.
       </p>
-      <div class="links">
-        <a
-          href="https://github.com/DevonTheFloor"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn-custom button--grey"
-        >
-          Mon GitHub
-        </a>
-        <nuxt-link to="blog/sommaire" class="btn-custom button--green">
-          Sommaire Blog
-        </nuxt-link>
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn-custom button--green"
-        >
-          Nuxt.Js
-        </a>
-      </div>
-      <p>Si tu es développeur et que tu entretiens une veille technologique ou si simplement tu t'interesses à l'actualité du net et des nouvelles technologies de l'information, je peux te conseiller :</p>
       <div class="links">
         <a
           href="https://myveille.herokuapp.com"
@@ -57,7 +66,20 @@
           My Veille
         </a>
       </div>
-      <p>Veille axée exclusivement sur le développement web. C'est ti pas beau la vie?</p>
+      <p>Un développeur qui cause de developpement, bah ça cause beaucoup! Entre les derniers outils de développement, un point sur un détail technique ou l'actu générale du web, on a toujours un truc à raconter. Alors forcement y a moment où ça fini en blog!</p>
+      <nuxt-link to="blog/sommaire" class="btn-custom button--green">
+        Sommaire Blog
+      </nuxt-link>
+    </div>
+    <p>Bien entendu, tu peux regarder  mes productions, qui ont la particularité de ne pas être juste des sites de démonstration, mais de vrais projets poussés en poduction.</p>
+    <div class="links">
+      <nuxt-link
+        to="/portfolio"
+        rel="noopener noreferrer"
+        class="btn-custom button--green"
+      >
+        Portfolio
+      </nuxt-link>
     </div>
     <br>
     <br>
@@ -67,6 +89,7 @@
 
 <script>
 export default {
+
   head () {
     return {
       title: 'Thierry-go-Dev',
@@ -91,24 +114,32 @@ export default {
         { name: 'twitter:creator', content: '@floor_dev' },
         // Twitter Summary card images must be at least 200x200px
         { name: 'twitter:image', content: 'https://thierry-go-dev/mvicon.png' }
-      ] /*,
-      link: [
-        { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap' },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap' },
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-      ] */
+      ]
     }
   }
 }
 </script>
 
 <style>
-
-.container {
+#indexhead {
+  min-width: 100%;
+  border: 20px ridge rgb(12, 77, 12);
+  background-image: url('~@/static/bann/boikourXL.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 5%;
+}
+header h1 {
+  color: rgb(59, 189, 20);
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+  font-size: 6em;
+}
+.container-fluid {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -121,7 +152,7 @@ Logo {
   border-radius: 45%;
 }
 .ecusson {
-  margin:1vw;
+  margin: 1vw;
 }
 .title {
   font-family:
@@ -144,9 +175,9 @@ Logo {
 .sub-title {
   font-weight: 200;
   font-size: 35px;
-  color: #43516e;
-  word-spacing: 2px;
-  padding-bottom: 15px;
+  color: rgb(61, 255, 13);
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
 }
 
 .links {
@@ -155,6 +186,9 @@ Logo {
 }
 
 @media screen and (max-width: 850px){
+  header {
+    background-image: url('~@/static/bann/boikourL.jpg');
+  }
   .profile {
     min-width: 12vw;
   }
@@ -167,6 +201,9 @@ Logo {
   }
 }
 @media screen and (max-width: 470px) {
+  header {
+    background-image: url('~@/static/bann/boikourS.jpg');
+  }
   .title {
     padding: 2%;
     font-size: 70px;

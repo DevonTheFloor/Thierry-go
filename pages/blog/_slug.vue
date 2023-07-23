@@ -1,15 +1,24 @@
 <template>
   <div>
-    <h1>{{ page.title }}</h1>
+    <MyHeader :urlim="page.img">
+      <template #titre>
+        {{ page.title }}
+      </template>
+    </MyHeader>
     <p>{{ page.description }}</p>
-    <figure class="illustration">
+    <!-- <figure class="illustration">
       <img :src="page.img">
-    </figure>
+    </figure>-->
     <nuxt-content :document="page" />
+    <br>
+    <p> Views: {{ views }} </p>
+    <Nav-blog />
+    <br>
   </div>
 </template>
 
 <script>
+
 export default {
   async asyncData ({ $content, params, error }) {
     const page = await $content('articles', params.slug)
@@ -24,6 +33,12 @@ export default {
       page
     }
   },
+  data () {
+    return {
+      views: null
+    }
+  },
+
   head () {
     return {
       title: this.page.title,
@@ -41,6 +56,12 @@ export default {
         { name: 'twitter:image', content: this.page.img }
       ]
     }
+  },
+  mounted () {
+    const views = this.$axios.$get('/counter/')
+    this.views = views
+    // eslint-disable-next-line no-console
+    // console.log('views :', views)
   }
 }
 </script>
@@ -53,9 +74,6 @@ article {
   width: 100%;
 }
 
-/*pre[class*="language-"] {
-
-}*/
 code {
   display: block;
   padding: 2%;
@@ -99,7 +117,7 @@ iframe {
   justify-items: center;
 }
 .illustration img {
-  max-width: 60%;
+  max-width: 50%;
   border: solid 1px green;
   margin: auto;
 }
@@ -108,6 +126,7 @@ h1 {
   color: #469583;
   text-align: center;
   border: 2 px solid green;
+  margin: 1%;
 }
 h2 {
   font-family: 'Dancing Script', cursive;
@@ -117,8 +136,19 @@ h2 {
 p {
   font-family: 'Cutive Mono', monospace;
   margin: 2%;
-  padding: 2%;
+  padding: 1%;
   color: #01130f;
+}
+.illu {
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  justify-items: center;
+}
+.illu img {
+  max-width: 20%;
+  border: solid 1px green;
+  margin: auto;
 }
 @media screen and (max-width: 850px){
   .profile {
@@ -161,13 +191,13 @@ p {
   p {
     padding: 5%;
   }
-  /*pre[class*="language-"] {
-    max-width: 90%;
-    min-width: 85%;
-  }*/
+
   div.nuxt-content-highlight {
   max-width: 90%;
   min-width: 85%;
+  }
+  h1 {
+    font-size: 2em;
   }
 }
 </style>

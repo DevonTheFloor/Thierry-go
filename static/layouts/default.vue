@@ -7,7 +7,6 @@
 <style>
 html {
   background-color: #469583;
-  margin: 1vw;
   padding: 1vw;
   font-family:
     'Source Sans Pro',
@@ -27,7 +26,7 @@ html {
   box-sizing: border-box;
 }
 body {
-  background-color: white;
+  background-color: rgb(248, 245, 245);
   width: 100%;
   height: 100%;
   border: 5px solid #355e50;

@@ -1,6 +1,6 @@
 ---
 title: Les langages du web
-description: Tous les langages qui composent le developpement web.Il y en a trois complètement inspensable et qui s'executent côté client et une plethore côté serveur.   
+description: Tous les langages qui composent le developpement web.Il y en a trois complètement inspensables et qui s'executent côté client et une plethore côté serveur.   
 img: https://thierry-go-dev.fr/tourn/images/blog/web.jpeg   
 ---  
 
@@ -24,11 +24,5 @@ Et n'oublie pas de régler le convecteur temporel pour revenir!width="560" heigh
 
 <div class="vdo">
   <iframe src="https://www.youtube.com/embed/bQEHrY4E0IA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-<br>
-<br>
-<br>
-<Nav-blog />
-<br>
-<br>
+</div>   
+   

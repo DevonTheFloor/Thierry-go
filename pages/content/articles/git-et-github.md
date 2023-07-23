@@ -1,21 +1,20 @@
 ---
 title: GIT et Github
-description: Le fameux content manager créer par Linus Thorvald himself et qui domine le monde.
+description: Le fameux content manager créé par Linus Thorvald himself et qui domine le monde.
 img: https://thierry-go-dev.fr/tourn/images/blog/gitetgithub.jpg
 ---   
 
 ## Git   
    
-Beaucoup trop de gens et parmis eux des professionnels aguerri, définissent Git comme étant un logiciel de versionning, en bon franglais. C'est un racourcit aussi court que simpliste.   
-
-Dans le monde du développement logiciel, que ce soit des applications natives, des exécutables de  bureau ou des application web, il n’est pas rare de ne pas trop savoir où l’on va. L’idée de base est très souvent sommaire et évolue en fonction de tout un tas de chose : la compréhension des désidératas du client, la finalité commerciale du produit, mais aussi et surtout, en fonction des dead lines.   
+Beaucoup trop de gens et parmis eux des professionnels aguerris, définissent Git comme étant un logiciel de versionning, en bon franglais. C'est un racourcit aussi court que simpliste.   
+Dans le monde du développement logiciel, que ce soit des applications natives, des exécutables de  bureau ou des applications web, il n’est pas rare de ne pas trop savoir où l’on va. L’idée de base est très souvent sommaire et évolue en fonction de tout un tas de chose : la compréhension des désidératas du client, la finalité commerciale du produit, mais aussi et surtout, en fonction des dead lines.   
 
 Quand il faut 6 mois pour développer un truc, et qu’on se rend compte qu’au 4e on n’en a pas fait la moitié… Les objectifs sont revus. On va abandonner telle fonctionnalité, on va simplifier telle interface, etc...   
 Pour faire tous ces ajustements sans devoir tout recommencer à chaque fois, tout en permettant à toutes les équipes de disposer de la base de code qui lui incombe et de faire son travail sans gêner celui des autres. Pour tout cela on an besoin d’un SCM, un Source Code Manager.   
    
 GIT est un des principaux SCM disponible. Par abus de langage on qualifie souvent GIT de logiciel de versionnage ou de gestion de version. En vérité la gestion des versions du logiciel par GIT n’est qu'une conséquence de son utilisation et qu’une infime partie seulement de toutes ses possibilités.   
-Git permets d’annuler des modifications même après sauvegarde du fichier (checkout).   
-Car Git sert à travailler sur son code avec la possibilité de le « sécurisé » à chaque fois que l’on fait une avancée intéressante (commit).   
+Git permet d’annuler des modifications même après sauvegarde du fichier (checkout).   
+Car Git sert à travailler sur son code avec la possibilité de le « sécuriser » à chaque fois que l’on fait une avancée intéressante (commit).   
 Un syteme de log permet de revenir en arrière même apres avoir commité.   
 Avec Git on peut travailler sur les améliorations du projet sans altérer le code source (branch).   
 Ce même système de branche permet à chaque membre d’une équipe de faire leur «fonctionnalité» de leur côté sans corrompre la base de code.   
@@ -37,7 +36,6 @@ Je te dis merci, ciao et à la semaine prochaine!
    
 Play liste Git et Github:   
    
-
 <div class="vdo">
   <iframe src="https://www.youtube.com/embed/tBJ0UatJxCY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>   
@@ -47,11 +45,5 @@ Tech Talk de Linus Thoravld (créateur de git et de Linux) chez google en 2007:
 
 <div class="vdo">
   <iframe src="https://www.youtube.com/embed/4XpnKHJAok8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-<br>
-<br>
-<br>
-<Nav-blog />
-<br>
-<br>
+</div>   
+   
