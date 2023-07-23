@@ -2,7 +2,7 @@
   <header class="bann__article">
     <img :src="urlim" class="bann">
     <h1 class="bann__titre">
-      <slot name="titre"></slot>
+      <slot name="titre" />
     </h1>
   </header>
 </template>
@@ -20,7 +20,7 @@ export default {
 </script>
 <style>
 header {
-  border: 20px ridge rgb(12, 77, 12);
+  border: 2px ridge rgb(12, 77, 12);
 }
 .bann {
   width: 100%;
@@ -33,6 +33,7 @@ header {
   height: 500px;
 }
 .bann__titre {
+  margin: auto;
   z-index: 1;
   position: absolute;
   top: 100px;
@@ -41,7 +42,7 @@ header {
   color: rgb(62, 255, 4);
   text-align: center;
   text-shadow: 2px 2px 2px black;
-  width: 85%;
+  width: 90%;
 }
 @media screen and (max-width: 850px){
   .bann__titre {

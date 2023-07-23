@@ -29,8 +29,8 @@ body {
   background-color: rgb(248, 245, 245);
   width: 100%;
   height: 100%;
-  border: 5px solid #355e50;
-  border-radius: 10px;
+  border: 2px solid #355e50;
+  border-radius: 8px;
 
 }
 *,
