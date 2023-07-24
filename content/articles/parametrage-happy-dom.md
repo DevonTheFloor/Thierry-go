@@ -15,12 +15,12 @@ Cette surcouche DOM légère offre une solution simple et puissante pour facilit
 ## Pourquoi happy-dom est plus pratique que JSDOM?   
    
 
-Contrairement a JSDOM toutes les fonctionnalités native du DOM, type document.create et autre getElementById, exsite dans happy-dom, alors qu'avec JSDOM il faut toutes les mocker.
+Contrairement a JSDOM toutes les fonctionnalités native du DOM, telles que "document.create" et autre "getElementById", exsite dans happy-dom, alors qu'avec JSDOM il faut toutes les mocker.
 On peut donc utiliser des sélecteurs CSS ou des attributs pour cibler les éléments, rendant les tests plus lisibles et compréhensibles.   
    
 ## Installation
    
-Dans ton projet vitest install happy-dom, classiquement:   
+Dans ton projet vitest installe happy-dom, classiquement:   
 ```shell
 npm install happy-dom
 ```
@@ -48,7 +48,7 @@ container.appendChild(button);
 console.log(document.body.innerHTML);   
 ```
    
-Le premeir problème surviendra très rapidement une forme, similaire à celle ci:
+Le premier problème surviendra très rapidement sous une forme similaire à celle ci:
 ```shell
 ReferenceError: document is not defined
  ❯ js/module-liste/index.js:3:15
@@ -63,8 +63,8 @@ ReferenceError: document is not defined
 Problème facilement resolu en ce référant à [la documentation de Vitest](https://vitest.dev/config/#environment) pour initialiser l'environnement.   
 Une fois happy-dom initialiser dans tes tests en comments style (par exemple), document sera reconnu. Tu pourras donc tester ta fabuleuse fonction qui manipule le DOM et bien plus encore.   
    
-Alors , on est âs bien là?
-A dev secure, Détendu du test ?   
+Alors , on est pas bien là?
+A dev secure, détendu du test ?   
    
 Sur ce, bon week et la semaine prochaiiiièène !   
    

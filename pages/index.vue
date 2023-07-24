@@ -1,7 +1,6 @@
 <template>
   <div class="container-fluid">
     <header id="indexhead">
-      <Logo />
       <h1>
         Thierry Go Dev
         <figure>
@@ -178,7 +177,7 @@ Logo {
 }
 
 .links {
-  margin: 3%;
+  margin: 1%;
   padding-top: 15px;
 }
 
@@ -197,7 +196,7 @@ Logo {
     margin: 2%;
   }
 }
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 500px) {
   header {
     background-image: url('~@/static/bann/boikourS.jpg');
   }
@@ -206,20 +205,21 @@ Logo {
     font-size: 70px;
   }
   .links {
-    margin: 1%;
+    margin: 3%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .profile {
-    min-width: 15vw;
+    min-width: 30vw;
   }
   .btn-custom {
     max-width: 60vw;
     margin: 1vh;
   }
   p {
-    padding: 1%;
+    text-align: justify;
+    padding: 6%;
   }
 }
 </style>
