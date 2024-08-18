@@ -28,5 +28,8 @@
   .btn-blog {
     text-align: center;
   }
+  .other {
+    color:red;
+  }
 }
 </style>
