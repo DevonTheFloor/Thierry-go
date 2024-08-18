@@ -1,12 +1,12 @@
-```markdown
 ---
 title: Unknow operator $or
 description: Error in MongoDB where the $or operator is not recognized.
 img: 'https://thierry-go-dev.fr/tourn/images/blog/or.png'
 ---
-
+   
+   
 ## Definition
-
+   
 The $or operator in MongoDB applies "a logical OR to an array of two or more expressions and selects the documents that satisfy at least one of these expressions".
 According to the syntax:
 
@@ -47,5 +47,5 @@ myCollection.find({
 ```
 
 And in the mongo shell, don't forget the quotes.
-With that said, have fun and see you next week for some great new adventures in JavaScript!!
+With that said, have fun and see you next week for some great new adventures in JavaScript!!   
 
