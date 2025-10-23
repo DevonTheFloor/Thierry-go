@@ -4,7 +4,7 @@
       <h1>
         Thierry Go Dev
         <figure>
-          <img class="profile" src="/static/profil.jpg">
+          <img class="profile" src="~/static/profil.jpg">
         </figure>
       </h1>
       <h2 class="sub-title">
@@ -12,7 +12,7 @@
       </h2>
       <div>
         <figure>
-          <img src="/static/HTML5.png" alt="logo html 5" class="ecusson">
+          <img src="~/static/HTML5.png" alt="logo html 5" class="ecusson">
           <img src="~@/static/css3.png" alt="logo css 3" class="ecusson">
           <img src="~@/static/JS.png" alt="logo JavaScript" class="ecusson">
           <img src="~@/static/node.png" alt="logo Node.js" class="ecusson">
