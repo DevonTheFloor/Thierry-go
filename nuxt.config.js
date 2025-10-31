@@ -2,6 +2,9 @@ export default {
   pageTransition: 'page',
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+  router: {
+    base: '/' // très important pour GitHub Pages
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -72,5 +75,6 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    publicPath: '_nuxt/'
   }
 }
