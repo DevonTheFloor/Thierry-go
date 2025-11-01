@@ -1,7 +1,7 @@
 ---
 title: GIT et Github
 description: Le fameux content manager créé par Linus Thorvald himself et qui domine le monde.
-img: https://thierry-go-dev.fr/tourn/images/blog/gitetgithub.jpg
+img: '/img-blog/heros/gitetgithub.jpg'
 ---   
 
 ## Git   

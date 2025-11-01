@@ -1,7 +1,7 @@
 ---
 title: Tutoriel de découverte de Vite.js
 description: Nous allons, aujourd'hui, démarrer avec Vite.js. Le bundler créer par Evan You et qui à pour ambition de remplacer webpack et VueCLI.
-img: 'https://thierry-go-dev.fr/tourn/images/blog/vitebase.png'
+img: '/img-blog/heros/vitebase.png'
 ---
    
       

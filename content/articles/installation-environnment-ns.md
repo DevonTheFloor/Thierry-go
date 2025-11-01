@@ -1,7 +1,7 @@
 ---
 title: Installation de l'environnement nativScript.
 description: Toutes les commandes pour installer l'environnement nativeScript. Le framework pour developper des applications mobiles avec les langages du web. En JS natif ou avec Vue, Angular ou React.
-img: 'https://thierry-go-dev.fr/tourn/images/blog/natiangu.png'
+img: '/img-blog/heros/natiangu.png'
 ---
    
    

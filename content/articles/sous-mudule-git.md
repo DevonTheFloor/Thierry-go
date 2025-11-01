@@ -1,7 +1,7 @@
 ---
 title: Sous module git
 description: Comment faire pour entretenir plusieurs dépôts git dans un même projet?
-img: 'https://thierry-go-dev.fr/_nuxt/img/boikourXL.511e3f2.jpg'
+img: '/img-blog/heros/sub-module.png'
 ---
 
 Pour un projet qui utilise deux (ou plus) dépôts Git distincts, tout en maintenant chaque historique sans interférer avec les fichiers ".git" du projet complet, il est possible d'utiliser des sous-modules. Cela peut être utile lorque l'on utilise une librairie toujours en cours de developpement par exemple et donc hors du champ du gestionnaire de dépendence. Ou plus probablement, une librairie importée directement depuis github sans passer par un gestionnaire.

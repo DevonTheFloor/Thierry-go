@@ -1,7 +1,7 @@
 ---
 title: Paramètrage de Happy DOM dans vitest
 description: Le paramétrage de happy-dom dans les tests unitaires avec ViTest.
-img: 'https://thierry-go-dev.fr/tourn/images/blog/vitesthappy.png'
+img: '/img-blog/heros/vitesthappy.png'
 write: 23/07/2023
 theme: Vitest
 ---

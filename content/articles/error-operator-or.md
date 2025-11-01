@@ -1,7 +1,7 @@
 ---
 title: Unknow operator $or
 description: Erreur dans mongoDB où l'opérateur $or n'est pas reconnu.
-img: 'https://thierry-go-dev.fr/tourn/images/blog/or.png'
+img: '/img-blog/heros/or.png'
 ---
 
 ## Definition

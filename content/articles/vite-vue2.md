@@ -1,7 +1,7 @@
 ---
 title: Vite.js + Vue2
 description: On revient sur Vite.js, le nouvel environnement de développement créé par Evan You, l'inventeur de Vue.js, car il impose Vue3 et ne fonctionne pas avec Vue2, c'est balo.
-img: 'https://thierry-go-dev.fr/tourn/images/blog/viteVue.png'
+img: '/img-blog/heros/vitevue.png'
 ---
    
    

@@ -6,12 +6,9 @@
       </template>
     </MyHeader>
     <p>{{ page.description }}</p>
-    <!-- <figure class="illustration">
-      <img :src="page.img">
-    </figure>-->
     <nuxt-content :document="page" />
     <br>
-    <p> Views: {{ views }} </p>
+    <p><i>Ecrit le: {{ page.write }}</i></p>
     <Nav-blog />
     <br>
   </div>

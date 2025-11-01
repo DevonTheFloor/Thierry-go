@@ -1,7 +1,7 @@
 ---
 title: Faire le build de production avec Vite.js
 description: Comment faire pour réaliser le build à pousser en production sachant qu'ici, ce sont les fonctions natives du navigateur qui s'occupent d'importer les modules.
-img : 'https://thierry-go-dev.fr/tourn/images/blog/vitebuild.png'
+img : '/img-blog/heros/vitebuild.png'
 ---   
    
 ## Empaqueter avec Vite   

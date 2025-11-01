@@ -1,7 +1,7 @@
 ---
 title: Erreur avec @nuxt/content dans VSCode
 description: Alors que toute la code base est nickel, il n'y a pourtant pas de réponse dans l'appel API.
-img: 'https://thierry-go-dev.fr/tourn/images/blog/contenterror1.png'
+img: '/img-blog/heros/contenterror1.png'
 ---
 ## L'erreur de skyzo !   
    

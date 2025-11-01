@@ -1,6 +1,6 @@
 <template>
   <div>
-    <MyHeader urlim="https://thierry-go-dev.fr/tourn/images/real.jpg">
+    <MyHeader urlim="/img-blog/heros/real.jpg">
       <template #titre>
         Mes Réalisations
       </template>
@@ -27,7 +27,7 @@
       <figure class="framebox">
         <a href="https://nulnestcenseignorerlaloi.fr" target="_blank">
           <img
-            src="https://thierry-go-dev.fr/tourn/images/nulscreen.png"
+            src="/img-blog/nulnscreen.png"
             class="imframe"
           >
         </a>
@@ -39,7 +39,7 @@
       <figure class="framebox">
         <a href="https://piecederecup.fr" target="_blank">
           <img
-            src="https://thierry-go-dev.fr/tourn/images/piecescreen.png"
+            src="/img-blog/piecescreen.png"
             class="imframe"
           >
         </a>
@@ -53,7 +53,7 @@
       <figure class="framebox">
         <a href="https://myveille.herokuapp.com" target="_blank">
           <img
-            src="https://thierry-go-dev.fr/tourn/images/veillescreen.png"
+            src="/img-blog/veillescreen.png"
             class="imframe"
           >
         </a>
@@ -65,7 +65,7 @@
       <figure class="framebox">
         <a href="https://www.chemindegestalt.fr/" target="_blank">
           <img
-            src="https://thierry-go-dev.fr/tourn/images/chemin.png"
+            src="/img-blog/chemin.png"
             class="imframe"
           >
         </a>

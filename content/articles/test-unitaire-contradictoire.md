@@ -1,7 +1,7 @@
 ---
 title : Test Unitaire contradictoire
 description: Dans des tests unitaires avec vitest et happy-dom, ici on se retrouve a avoir un element HTML à la fois define et NULL, convenons en, c'est un peu casse-pied!
-img: 'https://thierry-go-dev.fr/tourn/images/blog/contradictoire.jpg'
+img: '/img-blog/heros/contradictoire.jpg'
 write: 26/07/2023
 theme: Vitest
 ---

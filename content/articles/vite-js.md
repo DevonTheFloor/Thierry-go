@@ -1,7 +1,7 @@
 ---
 title: Vite.js 
 description: La taille grandissante des applications front-end fait accuser un sérieux ralentissement aux bundlers classiques durant le dévelopement. Vite.js est la solution que nous propose Evan You, qui est, entre autre, le créateur de Vue.js
-img: 'https://thierry-go-dev.fr/tourn/images/blog/viteJs.png'
+img: '/img-blog/heros/vitejs.png'
 ---
    
    

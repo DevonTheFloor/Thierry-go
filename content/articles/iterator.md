@@ -1,7 +1,7 @@
 ---
 title: Itérer sur un objet javascript
 description: Un objet javascript ne possède pas de méthode d'itération, mais depuis ES6 , il y a une solution.
-img: 'https://thierry-go-dev.fr/tourn/images/blog/iteratorImg.png'
+img: '/img-blog/heros/iteratorImg.png'
 ---
    
 Itérer sur un tableau est Une opération banale mais essentiel à bien des égards dans la programmation et ce , quel que soit le langage.   

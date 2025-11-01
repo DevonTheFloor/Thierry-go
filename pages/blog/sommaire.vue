@@ -1,6 +1,9 @@
 <template>
   <div>
     <h1>Sommaire</h1>
+    <p>
+      Tu trouveras ici des articles concernant JS, Node, Vue, Nuxt. Mais aussi quelque faits d'arme de ma vie de RNCP. Bonne lecture.
+    </p>
     <ul>
       <li v-for="article in sommaire" :key="article.id" class="link__sommaire-article">
         <div class="print">
@@ -61,8 +64,8 @@ export default {
         // <!-- Open Graph data -->
         { property: 'og:title', content: 'Blog de Dev' },
         { property: 'og:type', content: 'Web site' },
-        { property: 'og:url', content: 'https://thierry-go-dev.fr/sommaire' },
-        { property: 'og:image', content: 'https://thierry-go-dev/mvicon.png' },
+        { property: 'og:url', content: 'https://devonthefloor.github.io/sommaire' },
+        { property: 'og:image', content: 'https://devonthefloor.github.io/mvicon.png' },
         { property: 'og:description', content: 'Bienvenue sur mon blog, car non, la vidéo n\'a toujours pas remplacé les artciles.' },
         // <!-- Twitter Card data -->
         { name: 'twitter:card', content: 'summary' },
@@ -71,7 +74,7 @@ export default {
         { name: 'twitter:description', content: 'Bienvenue sur mon blog, car non, la vidéo n\'a toujours pas remplacé les artciles.' },
         { name: 'twitter:creator', content: '@floor_dev' },
         // <!-- Twitter Summary card images must be at least 200x200px -->
-        { name: 'twitter:image', content: 'https://thierry-go-dev/mvicon.png' }
+        { name: 'twitter:image', content: 'https://devonthefloor.github.io/mvicon.png' }
       ]
     }
   }

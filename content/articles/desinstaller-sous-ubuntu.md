@@ -1,7 +1,7 @@
 ---
 title: Désintaller un paquet sur Unbuntu avec apt.
 description: Comment désinstaller un paquet dans ubuntu avec le gestionnaire apt. Ce qui implique de l'avoir installé avec, bien entendu.
-img: 'https://thierry-go-dev.fr/tourn/images/blog/apt.jpg'
+img: '/img-blog/heros/apt.jpg'
 ---
    
 
