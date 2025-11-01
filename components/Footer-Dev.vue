@@ -45,7 +45,7 @@ export default {
   }
 }
 </script>
-<style>
+<style scoped>
 ol {
   padding-left: 0px;
   list-style-type: none;
