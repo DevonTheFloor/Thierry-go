@@ -27,6 +27,22 @@
     <p>
       Développeur full stack d'applications web mon stack est 100% JavaScript. Node.js bien entendu en back, mocha pour les tests. Je suis aussi de très prêt l'évolution de Deno et m'interesse au serveur web à base de Rust.<br> Même si MongoDB est ma base de données de prédilection, il est, bien evidemment, impossible de ne pas utiliser SQL.<br>Enfin en front, où je ne suis pas en reste, je suis disciple de Vue.js et de son meta framework Français: Nuxt.js!
     </p>
+    <p>
+      Ma chaîne YouTube: Commencée durant ma formation de dev, ça à été un excelent travail pour progresser. Le fait de restituer les connaissance rendait leur assimilation bien plus simple!
+    </p>
+    <div class="links">
+      <a
+        href="https://www.youtube.com/@devonthefloor6429"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-custom button--green"
+      >
+        YouTube Dev
+      </a>
+    </div>
+    <p>
+      Ses multiples formats de build pour la mise en prod offrent des perspectives de developpement qu'on ne trouve pas ailleurs. Et avec eux, Vuetify pour le CSS.<br>Maintenant avec l'arrivé de <nuxt-link to="/blog/vite-js">Vite.js</nuxt-link> (dont je suis super fan, tu verras) le developpement front-end devient encoreplus passionnant.<br> At last, mais pas des moindres, je m'adonne aussi avec plaisir au développement d'application mobile avec nativeScript pour Android et IOs.
+    </p>
     <div class="links">
       <a
         href="https://nuxtjs.org/"
@@ -37,9 +53,6 @@
         Nuxt.Js
       </a>
     </div>
-    <p>
-      Ses multiples formats de build pour la mise en prod offrent des perspectives de developpement qu'on ne trouve pas ailleurs. Et avec eux, Vuetify pour le CSS.<br>Maintenant avec l'arrivé de <nuxt-link to="/blog/vite-js">Vite.js</nuxt-link> (dont je suis super fan, tu verras) le developpement front-end devient encoreplus passionnant.<br> At last, mais pas des moindres, je m'adonne aussi avec plaisir au développement d'application mobile avec nativeScript pour Android et IOs.
-    </p>
     <p>
       Tu peux retrouver ici mon Github.
     </p>

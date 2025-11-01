@@ -1,6 +1,7 @@
 <template>
   <div>
     <Nuxt />
+    <FooterDev />
   </div>
 </template>
 
@@ -27,9 +28,9 @@ html {
 }
 body {
   background-color: rgb(248, 245, 245);
+  /*background: linear-gradient(to bottom, #e0eee6, #bef5e1);*/
   width: 100%;
   height: 100%;
-  border: 2px solid #355e50;
   border-radius: 8px;
 
 }
